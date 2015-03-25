@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		DEDD8E561AC33FFE006A68C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8E551AC33FFE006A68C0 /* main.m */; };
 		DEDD8E591AC33FFE006A68C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8E581AC33FFE006A68C0 /* AppDelegate.m */; };
-		DEDD8E5C1AC33FFE006A68C0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8E5B1AC33FFE006A68C0 /* FirstViewController.m */; };
-		DEDD8E5F1AC33FFE006A68C0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8E5E1AC33FFE006A68C0 /* SecondViewController.m */; };
 		DEDD8E621AC33FFE006A68C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEDD8E601AC33FFE006A68C0 /* Main.storyboard */; };
 		DEDD8E641AC33FFE006A68C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDD8E631AC33FFE006A68C0 /* Images.xcassets */; };
 		DEDD8E671AC33FFE006A68C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDD8E651AC33FFE006A68C0 /* LaunchScreen.xib */; };
 		DEDD8E731AC33FFE006A68C0 /* Fitness_TrainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8E721AC33FFE006A68C0 /* Fitness_TrainerTests.m */; };
+		DEDD8EB91AC34855006A68C0 /* ClockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8EB81AC34855006A68C0 /* ClockVC.m */; };
+		DEDD8EBF1AC34A6E006A68C0 /* AlarmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8EBE1AC34A6E006A68C0 /* AlarmVC.m */; };
+		DEDD8EC21AC34A86006A68C0 /* StopWatchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8EC11AC34A86006A68C0 /* StopWatchVC.m */; };
+		DEDD8EC81AC35F1E006A68C0 /* MuscleTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8EC71AC35F1E006A68C0 /* MuscleTableVC.m */; };
+		DEDD8ECB1AC35F36006A68C0 /* ExerciseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8ECA1AC35F36006A68C0 /* ExerciseTableVC.m */; };
+		DEDD8ECE1AC35F6C006A68C0 /* ExerciseData.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8ECD1AC35F6C006A68C0 /* ExerciseData.m */; };
+		DEDD8ED31AC362AD006A68C0 /* Abdomen.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDD8ECF1AC362AD006A68C0 /* Abdomen.png */; };
+		DEDD8ED41AC362AD006A68C0 /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDD8ED01AC362AD006A68C0 /* Back.png */; };
+		DEDD8ED51AC362AD006A68C0 /* Biceps.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDD8ED11AC362AD006A68C0 /* Biceps.png */; };
+		DEDD8ED61AC362AD006A68C0 /* Chest.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDD8ED21AC362AD006A68C0 /* Chest.png */; };
+		DEDD8ED91AC36695006A68C0 /* FoodData.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8ED81AC36695006A68C0 /* FoodData.m */; };
+		DEDD8EDC1AC366AA006A68C0 /* SupplementData.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8EDB1AC366AA006A68C0 /* SupplementData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +43,33 @@
 		DEDD8E551AC33FFE006A68C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DEDD8E571AC33FFE006A68C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DEDD8E581AC33FFE006A68C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DEDD8E5A1AC33FFE006A68C0 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		DEDD8E5B1AC33FFE006A68C0 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		DEDD8E5D1AC33FFE006A68C0 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		DEDD8E5E1AC33FFE006A68C0 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		DEDD8E611AC33FFE006A68C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEDD8E631AC33FFE006A68C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DEDD8E661AC33FFE006A68C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DEDD8E6C1AC33FFE006A68C0 /* Fitness TrainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fitness TrainerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDD8E711AC33FFE006A68C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEDD8E721AC33FFE006A68C0 /* Fitness_TrainerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fitness_TrainerTests.m; sourceTree = "<group>"; };
+		DEDD8E7C1AC34108006A68C0 /* Fitnesstrainer.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fitnesstrainer.pch; sourceTree = "<group>"; };
+		DEDD8EB71AC34855006A68C0 /* ClockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockVC.h; sourceTree = "<group>"; };
+		DEDD8EB81AC34855006A68C0 /* ClockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockVC.m; sourceTree = "<group>"; };
+		DEDD8EBD1AC34A6E006A68C0 /* AlarmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmVC.h; sourceTree = "<group>"; };
+		DEDD8EBE1AC34A6E006A68C0 /* AlarmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmVC.m; sourceTree = "<group>"; };
+		DEDD8EC01AC34A86006A68C0 /* StopWatchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatchVC.h; sourceTree = "<group>"; };
+		DEDD8EC11AC34A86006A68C0 /* StopWatchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopWatchVC.m; sourceTree = "<group>"; };
+		DEDD8EC61AC35F1E006A68C0 /* MuscleTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuscleTableVC.h; sourceTree = "<group>"; };
+		DEDD8EC71AC35F1E006A68C0 /* MuscleTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MuscleTableVC.m; sourceTree = "<group>"; };
+		DEDD8EC91AC35F36006A68C0 /* ExerciseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseTableVC.h; sourceTree = "<group>"; };
+		DEDD8ECA1AC35F36006A68C0 /* ExerciseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseTableVC.m; sourceTree = "<group>"; };
+		DEDD8ECC1AC35F6C006A68C0 /* ExerciseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseData.h; sourceTree = "<group>"; };
+		DEDD8ECD1AC35F6C006A68C0 /* ExerciseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseData.m; sourceTree = "<group>"; };
+		DEDD8ECF1AC362AD006A68C0 /* Abdomen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Abdomen.png; sourceTree = "<group>"; };
+		DEDD8ED01AC362AD006A68C0 /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back.png; sourceTree = "<group>"; };
+		DEDD8ED11AC362AD006A68C0 /* Biceps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Biceps.png; sourceTree = "<group>"; };
+		DEDD8ED21AC362AD006A68C0 /* Chest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chest.png; sourceTree = "<group>"; };
+		DEDD8ED71AC36695006A68C0 /* FoodData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodData.h; sourceTree = "<group>"; };
+		DEDD8ED81AC36695006A68C0 /* FoodData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodData.m; sourceTree = "<group>"; };
+		DEDD8EDA1AC366AA006A68C0 /* SupplementData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupplementData.h; sourceTree = "<group>"; };
+		DEDD8EDB1AC366AA006A68C0 /* SupplementData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupplementData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,15 +111,13 @@
 		DEDD8E521AC33FFE006A68C0 /* Fitness Trainer */ = {
 			isa = PBXGroup;
 			children = (
+				DEDD8EC31AC35E14006A68C0 /* Exercise */,
+				DEDD8EC41AC35E20006A68C0 /* Food */,
+				DEDD8EC51AC35E29006A68C0 /* Supplement */,
+				DEDD8EB61AC34843006A68C0 /* Clock */,
+				DEDD8E7D1AC34149006A68C0 /* GUI */,
 				DEDD8E571AC33FFE006A68C0 /* AppDelegate.h */,
 				DEDD8E581AC33FFE006A68C0 /* AppDelegate.m */,
-				DEDD8E5A1AC33FFE006A68C0 /* FirstViewController.h */,
-				DEDD8E5B1AC33FFE006A68C0 /* FirstViewController.m */,
-				DEDD8E5D1AC33FFE006A68C0 /* SecondViewController.h */,
-				DEDD8E5E1AC33FFE006A68C0 /* SecondViewController.m */,
-				DEDD8E601AC33FFE006A68C0 /* Main.storyboard */,
-				DEDD8E631AC33FFE006A68C0 /* Images.xcassets */,
-				DEDD8E651AC33FFE006A68C0 /* LaunchScreen.xib */,
 				DEDD8E531AC33FFE006A68C0 /* Supporting Files */,
 			);
 			path = "Fitness Trainer";
@@ -101,8 +126,13 @@
 		DEDD8E531AC33FFE006A68C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DEDD8ECF1AC362AD006A68C0 /* Abdomen.png */,
+				DEDD8ED01AC362AD006A68C0 /* Back.png */,
+				DEDD8ED11AC362AD006A68C0 /* Biceps.png */,
+				DEDD8ED21AC362AD006A68C0 /* Chest.png */,
 				DEDD8E541AC33FFE006A68C0 /* Info.plist */,
 				DEDD8E551AC33FFE006A68C0 /* main.m */,
+				DEDD8E7C1AC34108006A68C0 /* Fitnesstrainer.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,6 +152,60 @@
 				DEDD8E711AC33FFE006A68C0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEDD8E7D1AC34149006A68C0 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				DEDD8E601AC33FFE006A68C0 /* Main.storyboard */,
+				DEDD8E631AC33FFE006A68C0 /* Images.xcassets */,
+				DEDD8E651AC33FFE006A68C0 /* LaunchScreen.xib */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		DEDD8EB61AC34843006A68C0 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				DEDD8EB71AC34855006A68C0 /* ClockVC.h */,
+				DEDD8EB81AC34855006A68C0 /* ClockVC.m */,
+				DEDD8EBD1AC34A6E006A68C0 /* AlarmVC.h */,
+				DEDD8EBE1AC34A6E006A68C0 /* AlarmVC.m */,
+				DEDD8EC01AC34A86006A68C0 /* StopWatchVC.h */,
+				DEDD8EC11AC34A86006A68C0 /* StopWatchVC.m */,
+			);
+			name = Clock;
+			sourceTree = "<group>";
+		};
+		DEDD8EC31AC35E14006A68C0 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				DEDD8EC61AC35F1E006A68C0 /* MuscleTableVC.h */,
+				DEDD8EC71AC35F1E006A68C0 /* MuscleTableVC.m */,
+				DEDD8EC91AC35F36006A68C0 /* ExerciseTableVC.h */,
+				DEDD8ECA1AC35F36006A68C0 /* ExerciseTableVC.m */,
+				DEDD8ECC1AC35F6C006A68C0 /* ExerciseData.h */,
+				DEDD8ECD1AC35F6C006A68C0 /* ExerciseData.m */,
+			);
+			name = Exercise;
+			sourceTree = "<group>";
+		};
+		DEDD8EC41AC35E20006A68C0 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				DEDD8ED71AC36695006A68C0 /* FoodData.h */,
+				DEDD8ED81AC36695006A68C0 /* FoodData.m */,
+			);
+			name = Food;
+			sourceTree = "<group>";
+		};
+		DEDD8EC51AC35E29006A68C0 /* Supplement */ = {
+			isa = PBXGroup;
+			children = (
+				DEDD8EDA1AC366AA006A68C0 /* SupplementData.h */,
+				DEDD8EDB1AC366AA006A68C0 /* SupplementData.m */,
+			);
+			name = Supplement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +288,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEDD8ED31AC362AD006A68C0 /* Abdomen.png in Resources */,
+				DEDD8ED61AC362AD006A68C0 /* Chest.png in Resources */,
 				DEDD8E621AC33FFE006A68C0 /* Main.storyboard in Resources */,
+				DEDD8ED41AC362AD006A68C0 /* Back.png in Resources */,
+				DEDD8ED51AC362AD006A68C0 /* Biceps.png in Resources */,
 				DEDD8E671AC33FFE006A68C0 /* LaunchScreen.xib in Resources */,
 				DEDD8E641AC33FFE006A68C0 /* Images.xcassets in Resources */,
 			);
@@ -224,9 +312,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEDD8E5F1AC33FFE006A68C0 /* SecondViewController.m in Sources */,
+				DEDD8EDC1AC366AA006A68C0 /* SupplementData.m in Sources */,
 				DEDD8E591AC33FFE006A68C0 /* AppDelegate.m in Sources */,
-				DEDD8E5C1AC33FFE006A68C0 /* FirstViewController.m in Sources */,
+				DEDD8EB91AC34855006A68C0 /* ClockVC.m in Sources */,
+				DEDD8EC21AC34A86006A68C0 /* StopWatchVC.m in Sources */,
+				DEDD8ECE1AC35F6C006A68C0 /* ExerciseData.m in Sources */,
+				DEDD8ED91AC36695006A68C0 /* FoodData.m in Sources */,
+				DEDD8EBF1AC34A6E006A68C0 /* AlarmVC.m in Sources */,
+				DEDD8EC81AC35F1E006A68C0 /* MuscleTableVC.m in Sources */,
+				DEDD8ECB1AC35F36006A68C0 /* ExerciseTableVC.m in Sources */,
 				DEDD8E561AC33FFE006A68C0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "Fitness Trainer/Fitnesstrainer.pch";
 				INFOPLIST_FILE = "Fitness Trainer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "Fitness Trainer/Fitnesstrainer.pch";
 				INFOPLIST_FILE = "Fitness Trainer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
