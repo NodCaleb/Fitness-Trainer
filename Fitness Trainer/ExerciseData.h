@@ -1,4 +1,4 @@
-//
+﻿//
 //  ExerciseData.h
 //  Fitness Trainer
 //
@@ -22,5 +22,5 @@
 + (NSArray *) getExercisesForGroup:(int)groupNumber; //Тренировки для выбранной группы мышц, данные для второй таблицы вкладки Тренировки
 + (NSArray *) getAllExercisePictures;
 + (NSArray *) getPicturesForExercise:(int)exerciseNumber;
-
+//11
 @end
