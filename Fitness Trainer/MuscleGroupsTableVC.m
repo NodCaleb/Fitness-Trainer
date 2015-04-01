@@ -1,21 +1,24 @@
 //
-//  ExerciseTableVC.m
+//  MuscleGroupsTableVC.m
 //  Fitness Trainer
 //
-//  Created by Eugene Rozhkov on 25.03.15.
+//  Created by Eugene Rozhkov on 31.03.15.
 //  Copyright (c) 2015 Nord Point. All rights reserved.
 //
 
-#import "ExerciseTableVC.h"
+#import "MuscleGroupsTableVC.h"
+#import "ExerciseData.h"
 
-@interface ExerciseTableVC ()
+@interface MuscleGroupsTableVC ()
 
 @end
 
-@implementation ExerciseTableVC
+@implementation MuscleGroupsTableVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //self.muscleGroups = [ExerciseData getMuscleGroups];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -31,27 +34,26 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return  10;//[self.muscleGroups count];
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"muscleGroupCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    cell.textLabel.text = @"Group";
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

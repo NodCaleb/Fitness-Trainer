@@ -15,9 +15,9 @@
     NSMutableArray *muscleArray = [@[] mutableCopy];
     
     [muscleArray addObject:@{MUSCLE_GROUP_NUMBER: @0, MUSCLE_GROUP_NAME: @"Мышцы пресса", MUSCLE_GROUP_PICTURE: @"Abdomen.png"}];
-    [muscleArray addObject:@{MUSCLE_GROUP_NUMBER: @1, MUSCLE_GROUP_NAME: @"Грудные мышцы", MUSCLE_GROUP_PICTURE: @"Abdomen.png"}];
-    [muscleArray addObject:@{MUSCLE_GROUP_NUMBER: @2, MUSCLE_GROUP_NAME: @"Бицепсы", MUSCLE_GROUP_PICTURE: @"Abdomen.png"}];
-    [muscleArray addObject:@{MUSCLE_GROUP_NUMBER: @3, MUSCLE_GROUP_NAME: @"Спина", MUSCLE_GROUP_PICTURE: @"Abdomen.png"}];
+    [muscleArray addObject:@{MUSCLE_GROUP_NUMBER: @1, MUSCLE_GROUP_NAME: @"Грудные мышцы", MUSCLE_GROUP_PICTURE: @"Chest.png"}];
+    [muscleArray addObject:@{MUSCLE_GROUP_NUMBER: @2, MUSCLE_GROUP_NAME: @"Бицепсы", MUSCLE_GROUP_PICTURE: @"Biceps.png"}];
+    [muscleArray addObject:@{MUSCLE_GROUP_NUMBER: @3, MUSCLE_GROUP_NAME: @"Спина", MUSCLE_GROUP_PICTURE: @"Back.png"}];
     [muscleArray addObject:@{MUSCLE_GROUP_NUMBER: @4, MUSCLE_GROUP_NAME: @"Плечи", MUSCLE_GROUP_PICTURE: @"Abdomen.png"}];
     [muscleArray addObject:@{MUSCLE_GROUP_NUMBER: @5, MUSCLE_GROUP_NAME: @"Предплечья", MUSCLE_GROUP_PICTURE: @"Abdomen.png"}];
     [muscleArray addObject:@{MUSCLE_GROUP_NUMBER: @6, MUSCLE_GROUP_NAME: @"Ноги", MUSCLE_GROUP_PICTURE: @"Abdomen.png"}];

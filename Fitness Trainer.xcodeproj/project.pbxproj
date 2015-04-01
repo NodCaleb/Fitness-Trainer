@@ -16,8 +16,6 @@
 		DEDD8EB91AC34855006A68C0 /* ClockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8EB81AC34855006A68C0 /* ClockVC.m */; };
 		DEDD8EBF1AC34A6E006A68C0 /* AlarmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8EBE1AC34A6E006A68C0 /* AlarmVC.m */; };
 		DEDD8EC21AC34A86006A68C0 /* StopWatchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8EC11AC34A86006A68C0 /* StopWatchVC.m */; };
-		DEDD8EC81AC35F1E006A68C0 /* MuscleTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8EC71AC35F1E006A68C0 /* MuscleTableVC.m */; };
-		DEDD8ECB1AC35F36006A68C0 /* ExerciseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8ECA1AC35F36006A68C0 /* ExerciseTableVC.m */; };
 		DEDD8ECE1AC35F6C006A68C0 /* ExerciseData.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8ECD1AC35F6C006A68C0 /* ExerciseData.m */; };
 		DEDD8ED31AC362AD006A68C0 /* Abdomen.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDD8ECF1AC362AD006A68C0 /* Abdomen.png */; };
 		DEDD8ED41AC362AD006A68C0 /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDD8ED01AC362AD006A68C0 /* Back.png */; };
@@ -26,6 +24,10 @@
 		DEDD8ED91AC36695006A68C0 /* FoodData.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8ED81AC36695006A68C0 /* FoodData.m */; };
 		DEDD8EDC1AC366AA006A68C0 /* SupplementData.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8EDB1AC366AA006A68C0 /* SupplementData.m */; };
 		DEEBB1051AC8423F00B23F80 /* BMICalculatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEBB1041AC8423F00B23F80 /* BMICalculatorVC.m */; };
+		DEF902071ACAC53E004D7D19 /* MusleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF902061ACAC53E004D7D19 /* MusleTableViewCell.m */; };
+		DEF9020A1ACAC6CF004D7D19 /* ExerciseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF902091ACAC6CF004D7D19 /* ExerciseTableViewCell.m */; };
+		DEF9020D1ACACDE5004D7D19 /* FatCalculatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF9020C1ACACDE5004D7D19 /* FatCalculatorVC.m */; };
+		DEF902101ACAE5CC004D7D19 /* MuscleGroupsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF9020F1ACAE5CC004D7D19 /* MuscleGroupsTableVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +59,6 @@
 		DEDD8EBE1AC34A6E006A68C0 /* AlarmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmVC.m; sourceTree = "<group>"; };
 		DEDD8EC01AC34A86006A68C0 /* StopWatchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatchVC.h; sourceTree = "<group>"; };
 		DEDD8EC11AC34A86006A68C0 /* StopWatchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopWatchVC.m; sourceTree = "<group>"; };
-		DEDD8EC61AC35F1E006A68C0 /* MuscleTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuscleTableVC.h; sourceTree = "<group>"; };
-		DEDD8EC71AC35F1E006A68C0 /* MuscleTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MuscleTableVC.m; sourceTree = "<group>"; };
-		DEDD8EC91AC35F36006A68C0 /* ExerciseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseTableVC.h; sourceTree = "<group>"; };
-		DEDD8ECA1AC35F36006A68C0 /* ExerciseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseTableVC.m; sourceTree = "<group>"; };
 		DEDD8ECC1AC35F6C006A68C0 /* ExerciseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseData.h; sourceTree = "<group>"; };
 		DEDD8ECD1AC35F6C006A68C0 /* ExerciseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseData.m; sourceTree = "<group>"; };
 		DEDD8ECF1AC362AD006A68C0 /* Abdomen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Abdomen.png; sourceTree = "<group>"; };
@@ -73,6 +71,14 @@
 		DEDD8EDB1AC366AA006A68C0 /* SupplementData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupplementData.m; sourceTree = "<group>"; };
 		DEEBB1031AC8423F00B23F80 /* BMICalculatorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMICalculatorVC.h; sourceTree = "<group>"; };
 		DEEBB1041AC8423F00B23F80 /* BMICalculatorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMICalculatorVC.m; sourceTree = "<group>"; };
+		DEF902051ACAC53E004D7D19 /* MusleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusleTableViewCell.h; sourceTree = "<group>"; };
+		DEF902061ACAC53E004D7D19 /* MusleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusleTableViewCell.m; sourceTree = "<group>"; };
+		DEF902081ACAC6CF004D7D19 /* ExerciseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseTableViewCell.h; sourceTree = "<group>"; };
+		DEF902091ACAC6CF004D7D19 /* ExerciseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseTableViewCell.m; sourceTree = "<group>"; };
+		DEF9020B1ACACDE5004D7D19 /* FatCalculatorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FatCalculatorVC.h; sourceTree = "<group>"; };
+		DEF9020C1ACACDE5004D7D19 /* FatCalculatorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FatCalculatorVC.m; sourceTree = "<group>"; };
+		DEF9020E1ACAE5CC004D7D19 /* MuscleGroupsTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuscleGroupsTableVC.h; sourceTree = "<group>"; };
+		DEF9020F1ACAE5CC004D7D19 /* MuscleGroupsTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MuscleGroupsTableVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,12 +190,14 @@
 		DEDD8EC31AC35E14006A68C0 /* Exercise */ = {
 			isa = PBXGroup;
 			children = (
-				DEDD8EC61AC35F1E006A68C0 /* MuscleTableVC.h */,
-				DEDD8EC71AC35F1E006A68C0 /* MuscleTableVC.m */,
-				DEDD8EC91AC35F36006A68C0 /* ExerciseTableVC.h */,
-				DEDD8ECA1AC35F36006A68C0 /* ExerciseTableVC.m */,
 				DEDD8ECC1AC35F6C006A68C0 /* ExerciseData.h */,
 				DEDD8ECD1AC35F6C006A68C0 /* ExerciseData.m */,
+				DEF902051ACAC53E004D7D19 /* MusleTableViewCell.h */,
+				DEF902061ACAC53E004D7D19 /* MusleTableViewCell.m */,
+				DEF902081ACAC6CF004D7D19 /* ExerciseTableViewCell.h */,
+				DEF902091ACAC6CF004D7D19 /* ExerciseTableViewCell.m */,
+				DEF9020E1ACAE5CC004D7D19 /* MuscleGroupsTableVC.h */,
+				DEF9020F1ACAE5CC004D7D19 /* MuscleGroupsTableVC.m */,
 			);
 			name = Exercise;
 			sourceTree = "<group>";
@@ -217,6 +225,8 @@
 			children = (
 				DEEBB1031AC8423F00B23F80 /* BMICalculatorVC.h */,
 				DEEBB1041AC8423F00B23F80 /* BMICalculatorVC.m */,
+				DEF9020B1ACACDE5004D7D19 /* FatCalculatorVC.h */,
+				DEF9020C1ACACDE5004D7D19 /* FatCalculatorVC.m */,
 			);
 			name = Calculators;
 			sourceTree = "<group>";
@@ -325,16 +335,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF902101ACAE5CC004D7D19 /* MuscleGroupsTableVC.m in Sources */,
+				DEF9020D1ACACDE5004D7D19 /* FatCalculatorVC.m in Sources */,
+				DEF902071ACAC53E004D7D19 /* MusleTableViewCell.m in Sources */,
 				DEDD8EDC1AC366AA006A68C0 /* SupplementData.m in Sources */,
 				DEDD8E591AC33FFE006A68C0 /* AppDelegate.m in Sources */,
+				DEF9020A1ACAC6CF004D7D19 /* ExerciseTableViewCell.m in Sources */,
 				DEEBB1051AC8423F00B23F80 /* BMICalculatorVC.m in Sources */,
 				DEDD8EB91AC34855006A68C0 /* ClockVC.m in Sources */,
 				DEDD8EC21AC34A86006A68C0 /* StopWatchVC.m in Sources */,
 				DEDD8ECE1AC35F6C006A68C0 /* ExerciseData.m in Sources */,
 				DEDD8ED91AC36695006A68C0 /* FoodData.m in Sources */,
 				DEDD8EBF1AC34A6E006A68C0 /* AlarmVC.m in Sources */,
-				DEDD8EC81AC35F1E006A68C0 /* MuscleTableVC.m in Sources */,
-				DEDD8ECB1AC35F36006A68C0 /* ExerciseTableVC.m in Sources */,
 				DEDD8E561AC33FFE006A68C0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
