@@ -1,32 +1,25 @@
 //
-//  MuscleGroupsTableVC.m
+//  ExercisesTableVC.m
 //  Fitness Trainer
 //
-//  Created by Eugene Rozhkov on 31.03.15.
+//  Created by Eugene Rozhkov on 01.04.15.
 //  Copyright (c) 2015 Nord Point. All rights reserved.
 //
 
-#import "MuscleGroupsTableVC.h"
-#import "ExerciseData.h"
-#import "MusleTableViewCell.h"
 #import "ExercisesTableVC.h"
+#import "ExerciseData.h"
+#import "ExerciseTableViewCell.h"
 
-@interface MuscleGroupsTableVC ()
+@interface ExercisesTableVC ()
 
 @end
 
-@implementation MuscleGroupsTableVC
+@implementation ExercisesTableVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.muscleGroups = [ExerciseData getMuscleGroups];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.exercises = [ExerciseData getExercisesForGroup:self.muscleGroupNumber];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,19 +36,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.muscleGroups count];
+    return [self.exercises count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MusleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"muscleGroupCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"exerciseCell" forIndexPath:indexPath];
     
-    NSDictionary *muscleGroupDictionary = [self.muscleGroups objectAtIndex:indexPath.row];
+    NSDictionary *exerciseDictionary = [self.exercises objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = [muscleGroupDictionary objectForKey:MUSCLE_GROUP_NAME];
-    cell.imageView.image = [UIImage imageNamed:[muscleGroupDictionary objectForKey:MUSCLE_GROUP_PICTURE]];
-    cell.muscleGroupNumber = [[muscleGroupDictionary objectForKey:MUSCLE_GROUP_NUMBER] integerValue];
+    cell.textLabel.text = [exerciseDictionary objectForKey:EXERCISE_NAME];
     
     return cell;
 }
@@ -95,20 +86,14 @@
 }
 */
 
-
+/*
 #pragma mark - Navigation
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"showExercises"])
-        if ([segue.destinationViewController isKindOfClass:[ExercisesTableVC class]])
-        {
-            MusleTableViewCell *senderCell = (MusleTableViewCell *)sender;
-            ExercisesTableVC *targetVC = segue.destinationViewController;
-            targetVC.muscleGroupNumber = senderCell.muscleGroupNumber;
-        }
-        
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
-
+*/
 
 @end

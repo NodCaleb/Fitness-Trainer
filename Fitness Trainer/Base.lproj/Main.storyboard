@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -17,6 +17,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="ekP-D4-qAG" kind="relationship" relationship="viewControllers" id="4Pt-Gv-DVR"/>
                         <segue destination="zAr-Hs-6b5" kind="relationship" relationship="viewControllers" id="ewq-Bx-e2H"/>
                         <segue destination="cCB-lb-wPd" kind="relationship" relationship="viewControllers" id="b7B-1D-Pir"/>
                         <segue destination="b6V-7p-nUe" kind="relationship" relationship="viewControllers" id="OeI-LH-rEb"/>
@@ -278,6 +279,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Tcg-6a-M0i"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TEs-Nc-va2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Масса тела:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAh-T0-ELV">
@@ -372,9 +374,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="11" y="431" width="368" height="21"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="183 см." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Met-iC-LX2">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -389,8 +388,7 @@
                                         <exclude reference="ztZ-XO-JOe"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="11" y="460" width="368" height="61"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="ztZ-XO-JOe"/>
                                     </mask>
@@ -401,9 +399,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="11" y="529" width="368" height="21"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -458,38 +453,38 @@
                                 <exclude reference="sQU-fv-V77"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="d2E-gw-3Pe"/>
+                                <exclude reference="u1i-h8-Ehw"/>
+                                <exclude reference="iHk-6E-hkY"/>
+                                <exclude reference="2Iw-Yp-wrz"/>
+                                <exclude reference="KEo-uI-ixH"/>
+                                <exclude reference="WBG-ez-eVt"/>
+                                <exclude reference="drZ-Cw-A4n"/>
+                                <exclude reference="Geq-5F-FQc"/>
+                                <exclude reference="W3f-k0-wf8"/>
+                                <exclude reference="tUc-x9-TLN"/>
+                                <exclude reference="X1h-gd-fEC"/>
+                                <exclude reference="TsD-48-y2W"/>
+                                <exclude reference="lXg-qY-hpu"/>
+                                <exclude reference="aJB-S8-ese"/>
+                                <exclude reference="szp-xW-wic"/>
                                 <exclude reference="6kW-ap-XRH"/>
                                 <exclude reference="TyM-4O-Z3H"/>
                                 <exclude reference="deD-Gg-F0V"/>
                                 <exclude reference="gej-XZ-l4B"/>
-                                <exclude reference="DEQ-uz-HZA"/>
-                                <exclude reference="QNH-hn-ONv"/>
-                                <exclude reference="xGI-0T-TuK"/>
-                                <exclude reference="d2E-gw-3Pe"/>
                                 <exclude reference="8tB-qo-kgV"/>
                                 <exclude reference="LUw-AR-TeT"/>
                                 <exclude reference="Uv8-pJ-RYt"/>
                                 <exclude reference="jwW-8w-Ylk"/>
                                 <exclude reference="vs3-5s-giG"/>
-                                <exclude reference="aJB-S8-ese"/>
-                                <exclude reference="szp-xW-wic"/>
                                 <exclude reference="FOX-w1-3gL"/>
                                 <exclude reference="XBK-sM-Zju"/>
                                 <exclude reference="hNp-Ty-x8Q"/>
-                                <exclude reference="2Iw-Yp-wrz"/>
-                                <exclude reference="KEo-uI-ixH"/>
-                                <exclude reference="WBG-ez-eVt"/>
-                                <exclude reference="drZ-Cw-A4n"/>
-                                <exclude reference="iHk-6E-hkY"/>
+                                <exclude reference="DEQ-uz-HZA"/>
+                                <exclude reference="QNH-hn-ONv"/>
+                                <exclude reference="xGI-0T-TuK"/>
                                 <exclude reference="Hdv-hw-3Wj"/>
                                 <exclude reference="OGg-fC-CSR"/>
-                                <exclude reference="TsD-48-y2W"/>
-                                <exclude reference="lXg-qY-hpu"/>
-                                <exclude reference="Geq-5F-FQc"/>
-                                <exclude reference="W3f-k0-wf8"/>
-                                <exclude reference="tUc-x9-TLN"/>
-                                <exclude reference="u1i-h8-Ehw"/>
-                                <exclude reference="X1h-gd-fEC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -509,38 +504,38 @@
                                 <include reference="sQU-fv-V77"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="d2E-gw-3Pe"/>
+                                <include reference="u1i-h8-Ehw"/>
+                                <include reference="iHk-6E-hkY"/>
+                                <include reference="2Iw-Yp-wrz"/>
+                                <include reference="KEo-uI-ixH"/>
+                                <include reference="WBG-ez-eVt"/>
+                                <include reference="drZ-Cw-A4n"/>
+                                <include reference="Geq-5F-FQc"/>
+                                <include reference="W3f-k0-wf8"/>
+                                <include reference="tUc-x9-TLN"/>
+                                <include reference="X1h-gd-fEC"/>
+                                <include reference="TsD-48-y2W"/>
+                                <include reference="lXg-qY-hpu"/>
+                                <include reference="aJB-S8-ese"/>
+                                <include reference="szp-xW-wic"/>
                                 <include reference="6kW-ap-XRH"/>
                                 <include reference="TyM-4O-Z3H"/>
                                 <include reference="deD-Gg-F0V"/>
                                 <include reference="gej-XZ-l4B"/>
-                                <include reference="DEQ-uz-HZA"/>
-                                <include reference="QNH-hn-ONv"/>
-                                <include reference="xGI-0T-TuK"/>
-                                <include reference="d2E-gw-3Pe"/>
                                 <include reference="8tB-qo-kgV"/>
                                 <include reference="LUw-AR-TeT"/>
                                 <include reference="Uv8-pJ-RYt"/>
                                 <include reference="jwW-8w-Ylk"/>
                                 <include reference="vs3-5s-giG"/>
-                                <include reference="aJB-S8-ese"/>
-                                <include reference="szp-xW-wic"/>
                                 <include reference="FOX-w1-3gL"/>
                                 <include reference="XBK-sM-Zju"/>
                                 <include reference="hNp-Ty-x8Q"/>
-                                <include reference="2Iw-Yp-wrz"/>
-                                <include reference="KEo-uI-ixH"/>
-                                <include reference="WBG-ez-eVt"/>
-                                <include reference="drZ-Cw-A4n"/>
-                                <include reference="iHk-6E-hkY"/>
+                                <include reference="DEQ-uz-HZA"/>
+                                <include reference="QNH-hn-ONv"/>
+                                <include reference="xGI-0T-TuK"/>
                                 <include reference="Hdv-hw-3Wj"/>
                                 <include reference="OGg-fC-CSR"/>
-                                <include reference="TsD-48-y2W"/>
-                                <include reference="lXg-qY-hpu"/>
-                                <include reference="Geq-5F-FQc"/>
-                                <include reference="W3f-k0-wf8"/>
-                                <include reference="tUc-x9-TLN"/>
-                                <include reference="u1i-h8-Ehw"/>
-                                <include reference="X1h-gd-fEC"/>
                             </mask>
                         </variation>
                     </view>
@@ -646,6 +641,60 @@
             </objects>
             <point key="canvasLocation" x="3708" y="969"/>
         </scene>
+        <!--Muscle Groups TableVC-->
+        <scene sceneID="gdD-El-nnX">
+            <objects>
+                <tableViewController id="sFU-um-zgG" customClass="MuscleGroupsTableVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="nrk-PI-qdW">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="muscleGroupCell" id="CUC-Ie-SNt" customClass="MusleTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CUC-Ie-SNt" id="OnZ-Gg-cQK">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="8x2-0m-alw" kind="show" identifier="showExercises" id="w3e-P4-SRi"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sFU-um-zgG" id="ZKV-s3-n4r"/>
+                            <outlet property="delegate" destination="sFU-um-zgG" id="FoY-iA-w50"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="sjW-p4-LIS"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mC5-Ge-pO8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028" y="-1114.5"/>
+        </scene>
+        <!--Exercises TableVC-->
+        <scene sceneID="O1U-FS-Ycz">
+            <objects>
+                <tableViewController id="8x2-0m-alw" customClass="ExercisesTableVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="BLf-hl-V90">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="exerciseCell" id="cc8-i2-OI9" customClass="ExerciseTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cc8-i2-OI9" id="jgc-vP-Q7x">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8x2-0m-alw" id="xh5-mz-XUE"/>
+                            <outlet property="delegate" destination="8x2-0m-alw" id="biX-9h-A71"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQT-W6-rtp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2913" y="-1114.5"/>
+        </scene>
         <!--Питание-->
         <scene sceneID="Ax8-7o-tKT">
             <objects>
@@ -672,6 +721,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bM9-Za-L3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1110" y="-430.5"/>
+        </scene>
+        <!--Упражения-->
+        <scene sceneID="B89-ae-AHd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ekP-D4-qAG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Упражения" id="LEj-Kl-Ny1"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qwR-Kr-lCU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sFU-um-zgG" kind="relationship" relationship="rootViewController" id="osa-yJ-8Ig"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gaK-ic-a1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110" y="-1114.5"/>
         </scene>
     </scenes>
 </document>

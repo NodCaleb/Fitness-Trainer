@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEBFBA6B1ACC3EFF00EA3E75 /* ExercisesTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBFBA6A1ACC3EFF00EA3E75 /* ExercisesTableVC.m */; };
 		DEDD8E561AC33FFE006A68C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8E551AC33FFE006A68C0 /* main.m */; };
 		DEDD8E591AC33FFE006A68C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8E581AC33FFE006A68C0 /* AppDelegate.m */; };
 		DEDD8E621AC33FFE006A68C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEDD8E601AC33FFE006A68C0 /* Main.storyboard */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DEBFBA691ACC3EFF00EA3E75 /* ExercisesTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExercisesTableVC.h; sourceTree = "<group>"; };
+		DEBFBA6A1ACC3EFF00EA3E75 /* ExercisesTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExercisesTableVC.m; sourceTree = "<group>"; };
 		DEDD8E501AC33FFE006A68C0 /* Fitness Trainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness Trainer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDD8E541AC33FFE006A68C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEDD8E551AC33FFE006A68C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 				DEF902091ACAC6CF004D7D19 /* ExerciseTableViewCell.m */,
 				DEF9020E1ACAE5CC004D7D19 /* MuscleGroupsTableVC.h */,
 				DEF9020F1ACAE5CC004D7D19 /* MuscleGroupsTableVC.m */,
+				DEBFBA691ACC3EFF00EA3E75 /* ExercisesTableVC.h */,
+				DEBFBA6A1ACC3EFF00EA3E75 /* ExercisesTableVC.m */,
 			);
 			name = Exercise;
 			sourceTree = "<group>";
@@ -344,6 +349,7 @@
 				DEEBB1051AC8423F00B23F80 /* BMICalculatorVC.m in Sources */,
 				DEDD8EB91AC34855006A68C0 /* ClockVC.m in Sources */,
 				DEDD8EC21AC34A86006A68C0 /* StopWatchVC.m in Sources */,
+				DEBFBA6B1ACC3EFF00EA3E75 /* ExercisesTableVC.m in Sources */,
 				DEDD8ECE1AC35F6C006A68C0 /* ExerciseData.m in Sources */,
 				DEDD8ED91AC36695006A68C0 /* FoodData.m in Sources */,
 				DEDD8EBF1AC34A6E006A68C0 /* AlarmVC.m in Sources */,
