@@ -31,65 +31,65 @@
 {
     NSMutableArray *exerciseArray = [@[] mutableCopy];
     //Мышцы пресса
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @0, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Подъем ног"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @0, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Подъем ног из положения сидя"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @0, EXERCISE_NUMBER: @2, EXERCISE_NAME: @"Подъем туловища на наклонной скамье"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @0, EXERCISE_NUMBER: @3, EXERCISE_NAME: @"Подъем бедер с поворотом"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @0, EXERCISE_NUMBER: @4, EXERCISE_NAME: @"Скручивания с  утяжелением"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @0, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Подъем ног", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @0, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Подъем ног из положения сидя", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @0, EXERCISE_NUMBER: @2, EXERCISE_NAME: @"Подъем туловища на наклонной скамье", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @0, EXERCISE_NUMBER: @3, EXERCISE_NAME: @"Подъем бедер с поворотом", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @0, EXERCISE_NUMBER: @4, EXERCISE_NAME: @"Скручивания с  утяжелением", EXERCISE_DESCRIPTION: @""}];
     
 //Грудные мышцы
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @1, EXERCISE_NUMBER: @5, EXERCISE_NAME: @"Жим лежа "}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @1, EXERCISE_NUMBER: @6, EXERCISE_NAME: @"Жим гантелей"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @1, EXERCISE_NUMBER: @7, EXERCISE_NAME: @"Кроссоверы"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @1, EXERCISE_NUMBER: @8, EXERCISE_NAME: @"Разводка гантелей"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @1, EXERCISE_NUMBER: @9, EXERCISE_NAME: @"Отжимания"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @1, EXERCISE_NUMBER: @5, EXERCISE_NAME: @"Жим лежа ", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @1, EXERCISE_NUMBER: @6, EXERCISE_NAME: @"Жим гантелей", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @1, EXERCISE_NUMBER: @7, EXERCISE_NAME: @"Кроссоверы", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @1, EXERCISE_NUMBER: @8, EXERCISE_NAME: @"Разводка гантелей", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @1, EXERCISE_NUMBER: @9, EXERCISE_NAME: @"Отжимания", EXERCISE_DESCRIPTION: @""}];
 
 //Бицепсы
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @2, EXERCISE_NUMBER: @10, EXERCISE_NAME: @"Подъем гантелей"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @2, EXERCISE_NUMBER: @11, EXERCISE_NAME: @"Подъем штанги стоя"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @2, EXERCISE_NUMBER: @12, EXERCISE_NAME: @"Подъем обратным хватом стоя"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @2, EXERCISE_NUMBER: @13, EXERCISE_NAME: @"Целевой подъем на бицепс сидя"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @2, EXERCISE_NUMBER: @14, EXERCISE_NAME: @"Подъем гантелей на бицепс'Молот'"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @2, EXERCISE_NUMBER: @10, EXERCISE_NAME: @"Подъем гантелей", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @2, EXERCISE_NUMBER: @11, EXERCISE_NAME: @"Подъем штанги стоя", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @2, EXERCISE_NUMBER: @12, EXERCISE_NAME: @"Подъем обратным хватом стоя", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @2, EXERCISE_NUMBER: @13, EXERCISE_NAME: @"Целевой подъем на бицепс сидя", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @2, EXERCISE_NUMBER: @14, EXERCISE_NAME: @"Подъем гантелей на бицепс'Молот'", EXERCISE_DESCRIPTION: @""}];
 
 //Спина
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Становая тяга"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Вертикальная тяга блока"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @2, EXERCISE_NAME: @"Тяга штанги в наклоне"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @3, EXERCISE_NAME: @"Шраги со штангой"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @4, EXERCISE_NAME: @"Шраги с гантелями"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @4, EXERCISE_NAME: @"Подтягивания"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Становая тяга", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Вертикальная тяга блока", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @2, EXERCISE_NAME: @"Тяга штанги в наклоне", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @3, EXERCISE_NAME: @"Шраги со штангой", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @4, EXERCISE_NAME: @"Шраги с гантелями", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @4, EXERCISE_NAME: @"Подтягивания", EXERCISE_DESCRIPTION: @""}];
     
 //Плечи
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Тяга штанги к подбородку"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Жим гантелей сидя"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @2, EXERCISE_NAME: @"Жим штанги на наклонной скамье"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @3, EXERCISE_NAME: @"Боковые подъемы гантелей"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @4, EXERCISE_NAME: @"Жим гантелей сидя"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Тяга штанги к подбородку", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Жим гантелей сидя", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @2, EXERCISE_NAME: @"Жим штанги на наклонной скамье", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @3, EXERCISE_NAME: @"Боковые подъемы гантелей", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @4, EXERCISE_NAME: @"Жим гантелей сидя", EXERCISE_DESCRIPTION: @""}];
 
 //Предплечья
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @5, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Сгибания на запястья со штангой"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @5, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Сгибания на запястья с гантелей"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @5, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Сгибания на запястья со штангой", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @5, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Сгибания на запястья с гантелей", EXERCISE_DESCRIPTION: @""}];
 
 
 //Ноги
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Присед  со штангой"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Жим ногами на тренажере"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @2, EXERCISE_NAME: @"Выпады с гантелями"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @3, EXERCISE_NAME: @"Приседания с гантелями"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @4, EXERCISE_NAME: @"Гакк-приседания"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Присед  со штангой", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Жим ногами на тренажере", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @2, EXERCISE_NAME: @"Выпады с гантелями", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @3, EXERCISE_NAME: @"Приседания с гантелями", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @4, EXERCISE_NAME: @"Гакк-приседания", EXERCISE_DESCRIPTION: @""}];
 
 //Голеностоп
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @7, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Подъемы на носках"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @7, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Разгибание голени сидя в тренажере"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @7, EXERCISE_NUMBER: @2, EXERCISE_NAME: @"Подъемы на тренажере стоя"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @7, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Подъемы на носках", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @7, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Разгибание голени сидя в тренажере", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @7, EXERCISE_NUMBER: @2, EXERCISE_NAME: @"Подъемы на тренажере стоя", EXERCISE_DESCRIPTION: @""}];
     
 
 //Трицепсы
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Французский жим"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Жим на блоках"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Обратный жим на блоках"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Трицепс на скамье"}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Разгибания гантели из за головы"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Французский жим", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Жим на блоках", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Обратный жим на блоках", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Трицепс на скамье", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Разгибания гантели из за головы", EXERCISE_DESCRIPTION: @""}];
 
 
 

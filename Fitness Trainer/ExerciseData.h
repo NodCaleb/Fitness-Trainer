@@ -14,6 +14,7 @@
 #define EXERCISE_NUMBER @"Number of exercise"
 #define EXERCISE_NAME @"Name of exercise"
 #define EXERCISE_PICTURE @"Picture of exercise"
+#define EXERCISE_DESCRIPTION @"Description of exercise"
 
 @interface ExerciseData : NSObject
 
@@ -23,4 +24,5 @@
 + (NSArray *) getAllExercisePictures;
 + (NSArray *) getPicturesForExercise:(int)exerciseNumber;
 //11
+
 @end
