@@ -105,63 +105,110 @@
 "}];
 
 //Спина
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Становая тяга", EXERCISE_DESCRIPTION: @"1. Станьте перед штангой. Возьмите за гриф средним хватом сверху (ладони направлены вниз). Спину держите как можно ровнее. Ноги поставьте на ширине плеч и согните их в коленях. Это будет Ваше исходное положение.\n
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @15, EXERCISE_NAME: @"Становая тяга", EXERCISE_DESCRIPTION: @"1. Станьте перед штангой. Возьмите за гриф средним хватом сверху (ладони направлены вниз). Спину держите как можно ровнее. Ноги поставьте на ширине плеч и согните их в коленях. Это будет Ваше исходное положение.\n
 2. На выдохе поднимите штангу и одновременно выпрямите спину. Таким образом вы как бы принимаете положение по стойке «смирно».\n
 3. Удержите спину ровной на короткое время, затем медленно опустите штангу на пол, наклоняясь вперед и слегка сгибая ноги в коленях.
 "}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Вертикальная тяга блока", EXERCISE_DESCRIPTION: @"1. Установите необходимый вес и сядьте за тренажер с широкой рукоятью. Настройте валик удерживающий ноги, так чтобы при движение вверх Вы не отрывались от скамьи.\n
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @16, EXERCISE_NAME: @"Вертикальная тяга блока", EXERCISE_DESCRIPTION: @"1. Установите необходимый вес и сядьте за тренажер с широкой рукоятью. Настройте валик удерживающий ноги, так чтобы при движение вверх Вы не отрывались от скамьи.\n
 2. Рукоять держите широким хватом на расстояние вытянутой руки, ладонями вперед. Отклоните торс приблизительно на 30° назад, слегка прогнув поясницу и выставив грудь вперед. Это будет Ваше исходное положение.\n
 3. На выдохе плавно опустите рукоять вниз, пока она не коснется верха груди. Тяните рукоять строго вниз, сводя лопатки. Верхняя часть туловища должна оставаться неподвижной, должны двигаться только Ваши руки. Локти движутся параллельно вдоль боков и направлены назад и в стороны.\n
 4. После короткой паузы, на вдохе плавно верните рукоять в исходное положение, выпрямив руки, так чтобы в спине почувствовалось легкое растяжение.
 "}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @2, EXERCISE_NAME: @"Тяга штанги в наклоне", EXERCISE_DESCRIPTION: @"1. Стойте прямо, держа в руках штангу обратным хватом, ладони должны быть направлены вверх.\n
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @17, EXERCISE_NAME: @"Тяга штанги в наклоне", EXERCISE_DESCRIPTION: @"1. Стойте прямо, держа в руках штангу обратным хватом, ладони должны быть направлены вверх.\n
 2. Слегка согните ноги в коленях и немного наклонитесь вперед, спину держите естественно ее положение. Совет: голову держите все время приподнятой. Штангу держите перед собой на расстояние вытянутой руки. Это будет Ваше исходное положение.\n
 3. Сохраняя туловище в наклоном положении, на выдохе потяните штангу вверх, локти держите как можно ближе к телу. В верхней точке положение напрягите мышцы спины и задержитесь в течение секунды.\n
 4. На вдохе плавно опустите штангу в исходное положение.
 "}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @3, EXERCISE_NAME: @"Шраги со штангой", EXERCISE_DESCRIPTION: @""}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @4, EXERCISE_NAME: @"Шраги с гантелями", EXERCISE_DESCRIPTION: @""}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @4, EXERCISE_NAME: @"Подтягивания", EXERCISE_DESCRIPTION: @"1. Исходное положение для подтягивания: возьмитесь за перекладину узким обратным хватом. Хват берется даже уже плеч.\n
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @18, EXERCISE_NAME: @"Тяга нижнего блока к груди", EXERCISE_DESCRIPTION: @"1. Для выполнения данного упражнения вам понадобиться доступ к нижнему блоку с V-образной рукояткой. Совет: Такая рукоятка обеспечивает нейтральный хват, ваши ладони будут направлены друг к другу.\n
+2. Сядьте на тренажер и поставьте немного согнутые в коленях ноги на платформу тренажера. Ноги держите параллельно, колени не сводите.\n
+3. Теперь наклонитесь вперед и возьмитесь за V-образную рукоятку.\n
+4. Для исходного положения выпрямите руки и отклоните торс назад, чтобы оно образовывало с Вашими ногами 90 градусов. Немного выгните спину. Ваши широчайшие мышцы должны быть растянуты.\n
+5. Сохраняя туловище не подвижным, на выдохе начинайте тянуть рукоятку на себя, держите локти как можно близко к туловищу. Продолжайте движение, пока рукоятка слегка не коснется живота. В этот момент как можно сильнее напрягите мышцы спины и задержитесь в течение секунды.\n
+6. После короткой паузы, на вдохе плавно вернитесь в исходное положение.
+"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @19, EXERCISE_NAME: @"Тяга верхнего блока прямыми руками", EXERCISE_DESCRIPTION: @"1. Возьмитесь за широкую рукоятку верхнего блока средним прямым хватом (ладонями вниз) и сделайте шаг назад от тренажера.\n
+2. Наклоните туловище вперед под углом приблизительно 30 градусов. Руки полностью вытяните вперед и немного согните их в локтях. Если руки полностью не вытянуты под действием троса, то Вам необходимо отступить еще немного назад. Это будет Ваше исходное положение.\n
+3. Сохраняя руки вытянутыми с небольшим изгибом, на выдохе потяните рукоятку вниз, пока Ваши руки не окажутся по бокам бедер.\n
+4. Держа руки вытянутыми, на вдохе плавно вернитесь в исходное положение.
+"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @3, EXERCISE_NUMBER: @20, EXERCISE_NAME: @"Подтягивания", EXERCISE_DESCRIPTION: @"1. Исходное положение для подтягивания: возьмитесь за перекладину узким обратным хватом. Хват берется даже уже плеч.\n
 2. Далее медленно подтягивайтесь до касания перекладиной груди и медленно опускаетесь в исходное положение. Максимально растяните широчайшие мышцы, повиснув на выпрямленных руках.
 "}];
     
 //Плечи
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Тяга штанги к подбородку", EXERCISE_DESCRIPTION: @""}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Жим гантелей сидя", EXERCISE_DESCRIPTION: @""}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @2, EXERCISE_NAME: @"Жим штанги на наклонной скамье", EXERCISE_DESCRIPTION: @""}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @3, EXERCISE_NAME: @"Боковые подъемы гантелей", EXERCISE_DESCRIPTION: @""}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @4, EXERCISE_NAME: @"Жим гантелей сидя", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @21, EXERCISE_NAME: @"Тяга штанги к подбородку", EXERCISE_DESCRIPTION: @"1. Возьмите штангу узким прямым хватом (немного меньше, чем на ширине плеч). Держите ее в опущенных руках с небольшим изгибом в локтях. Ваша спина должна быть ровной. Это будет Ваше исходное положение.\n
+2. На вдохе, усилием плеч, начинайте поднимать и разводить локти. Во время подъема штанги, держите ее как можно ближе к телу. Продолжайте движение до тех пор, пока гриф не приблизится к подбородку. Совет: ваши локти должны определять движение и постоянно находиться выше предплечий, также не забывайте о неподвижности торса.\n
+3. На выдохе плавно опустите штангу в исходное положение.
+"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @22, EXERCISE_NAME: @"Жим на брусьях", EXERCISE_DESCRIPTION: @"1. Чтобы войти в исходное положение для жима на брусьях, примите упор на брусьях, удерживая свое тело на выпрямленных сжатых руках.\n
+2. На вдохе, медленно наклонитесь вперед, сгибая руки (примерно на 30º), локти немного разводите в стороны. Продолжайте опускаться, пока Вы не почувствуйте легкое натяжение в грудных мышц.\n
+3. Как только Вы почувствуете это легкое натяжение, используя усилия грудных мышц, плавно вернитесь в исходное положение. Совет для лучшего эффекта от жима на брусьях: Не забудьте сжать грудные мышцы в течение секунды в верхней точке положения.
+"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @23, EXERCISE_NAME: @"Жим штанги на наклонной скамье", EXERCISE_DESCRIPTION: @"1. Лягте на наклонную скамью. Возьмитесь за штангу средним хватом (при этом хвате, в середине движения между предплечьем и плечом образуется 90º), и снимите со стоек, удерживайте ее на вытянутых руках перед собой. Это будет Ваше исходное положение.\n
+2. На вдохе, медленно опустите штангу, пока гриф не коснется верхней части груди.\n
+3. После секундной паузы, на выдохе выжмите штангу обратно в исходное положение, при этом используете грудные мышцы. В исходном положении штанги, напрягите грудные мышцы в течение секунды, затем снова опустите штангу.
+"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @24, EXERCISE_NAME: @"Боковые подъемы гантелей", EXERCISE_DESCRIPTION: @"1. Возьмите в одну руку гантель. Свободной рукой возьмитесь за наклонную скамью для устойчивости.\n
+2. Станьте прямо и выпрямите руку, в которой держите гантель, ладонью к себе. Это будет Ваше исходное положение.\n
+3. Сохраняя туловище не подвижным (никаких рывков или покачиваний), на выдохе начинайте поднимать руку в сторону с небольшим изгибом в локте, кроме того, немного наклонитесь вперед. Продолжайте поднимать, пока Ваша рука не окажется параллельна полу. Задержите положение в верхней точке на 1-2 секунды.\n
+4. На вдохе, опустите руку с гантелью обратно в исходное положение.
+"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @4, EXERCISE_NUMBER: @25, EXERCISE_NAME: @"Жим гантелей сидя", EXERCISE_DESCRIPTION: @"1. Возьмите гантели в обе руки и сядьте на наклонную скамью со спинкой. Гантели положите на бедра.\n
+2. Теперь поднимите по одной гантели до уровня ваших плеч, при этом помогайте себе бедрами отталкивать гантели, кроме того, поворачивайте кисти, таким образом, чтобы Ваши ладони оказались направлены от вас. Это будет Ваше исходное положение.\n
+3. На выдохе, выжмите гантели вверх, пока они не соприкоснутся в наивысшей точке движения.\n
+4. Затем, после короткой паузы, медленно опустите гантели обратно в исходное положение, сделайте вдох.
+"}];
 
 //Предплечья
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @5, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Сгибания на запястья со штангой", EXERCISE_DESCRIPTION: @"1. Встаньте на колени перед горизонтальной скамьей и расположите с одной стороны штангу.\n
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @5, EXERCISE_NUMBER: @26, EXERCISE_NAME: @"Сгибания на запястья со штангой", EXERCISE_DESCRIPTION: @"1. Встаньте на колени перед горизонтальной скамьей и расположите с одной стороны штангу.\n
 2. Возьмитесь за гриф прямым хватом и поднимите ее. Положите предплечья на скамью таким образом, чтобы кисти могли свободно свисать с края скамьи.\n
 3. На выдохе согните кисти вверх и задержитесь в этом положение в течение секунды, затем медленно опустите кисти в исходное положение. 
 "}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @5, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Сгибания на запястья с гантелей", EXERCISE_DESCRIPTION: @"1. Встаньте на колени перед горизонтальной скамьей и расположите с одной стороны две гантели.\n
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @5, EXERCISE_NUMBER: @27, EXERCISE_NAME: @"Сгибания на запястья с гантелей", EXERCISE_DESCRIPTION: @"1. Встаньте на колени перед горизонтальной скамьей и расположите с одной стороны две гантели.\n
 2. Поднимите гантели и положите предплечья на скамью, чтобы кисти могли свободно свисать с края скамьи.\n
 3. На выдохе согните кисти вверх и задержитесь в этом положение в течение секунды, затем медленно опустите кисти в исходное положение.
 "}];
 
 
 //Ноги
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Присед  со штангой", EXERCISE_DESCRIPTION: @""}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Жим ногами на тренажере", EXERCISE_DESCRIPTION: @""}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @2, EXERCISE_NAME: @"Выпады с гантелями", EXERCISE_DESCRIPTION: @""}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @3, EXERCISE_NAME: @"Приседания с гантелями", EXERCISE_DESCRIPTION: @""}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @4, EXERCISE_NAME: @"Гакк-приседания", EXERCISE_DESCRIPTION: @""}];
-
-//Голеностоп
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @7, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Выпады с гантелями", EXERCISE_DESCRIPTION: @"1. Возьмите в каждую руку по гантели. Станьте ровно, гантели в опущенных по швам руках. Это будет Ваше исходное положение.\n
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @28, EXERCISE_NAME: @"Присед  со штангой", EXERCISE_DESCRIPTION: @"1. Это упражнение лучше всего выполнять внутри стойки для приседаний в целях безопасности. Чтобы начать упражнение, сначала установите гриф на стойке чуть выше уровня плеча. Как только выбрана правильная высота, загрузите гриф. Теперь встаньте под гриф, расположив его сзади на плечи (немного ниже шеи).\n
+2. Возьмитесь за гриф с двух сторон обеими руками и снимите штангу со стоек, одновременно отталкиваясь ногами и выпрямляя спину.\n
+3. Сделайте шаг вперед. Ноги поставьте на ширине плеч и слегка разведите носки. Голову и спину постоянно держите прямо. Это будет Ваше исходное положение.\n
+4. На вдохе, начинайте плавно приседать, держа голову поднятой, а спину – прямой. Продолжайте приседать до тех пор, пока задняя поверхность бедра не будет на икрах.\n
+5. Начинайте поднимать штангу на выдохе, отталкиваясь от пола пятками или средней частью стопы. Выпрямив ноги и вытянув бедра, вернитесь в исходное положение.
+"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @29, EXERCISE_NAME: @"Жим ногами на тренажере", EXERCISE_DESCRIPTION: @"1. Установите необходимый вес и сядьте в тренажер. Расположите ноги на платформе прямо перед собой на ширине плеч.\n
+2. Снимите фиксатор тренажера и выжмите платформу до полного распрямления ног, таким образом Ваше туловище и ноги должны образовать прямой угол. Это будет Ваше исходное положение. Совет: следите за тем, чтобы Ваши колени не сводились.\n
+3. Теперь плавно опускайте платформу, до тех пор, пока между бедром и туловищем не образуется прямой угол.\n
+4. Усилием квадрицепсов, поднимите платформу в исходное положение. Эта часть движения выполняется на выдохе.
+"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @30, EXERCISE_NAME: @"Выпады с гантелями", EXERCISE_DESCRIPTION: @"1. Возьмите в каждую руку по гантели. Станьте ровно, гантели в опущенных по швам руках. Это будет Ваше исходное положение.\n
 2. Сделайте один большой шаг вперед, примерно на 60 см. На вдохе, согните колено передней ноги, чтобы весь вес пришелся на нее. Туловище держите ровно. Колено задней ноги не должно находится от пола на 10-12 сантиметров.\n
 3. На выдохе оттолкнитесь пяткой от пола и вернитесь в исходное положение. Повторите это движение с другой ногой.
 "}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @7, EXERCISE_NUMBER: @1, EXERCISE_NAME: @"Разгибание голени сидя в тренажере", EXERCISE_DESCRIPTION: @"1. Сядьте на тренажер, поставьте носки на нижнюю часть платформы и растяните икры. Выберите одно из трех положений для стоп (параллельно, вместе либо врозь) в зависимости от целевой группы мышц.\n
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @31, EXERCISE_NAME: @"Приседания с гантелями", EXERCISE_DESCRIPTION: @"1. Стойте прямо, держа гантели в каждой руке (ладони направлены вовнутрь).\n
+2. Ноги поставьте на ширину плеч, слегка разведите носки. Голову и спину постоянно держите прямо – наклон вперед повлечет за собой потерю равновесия. Это будет Ваше исходное положение.\n
+3. На вдохе начинайте медленно приседать, держа голову поднятой, а спину – прямой. Продолжайте приседать пока бедра не будут параллельны полу. Совет: Если вы правильно выполнили упражнение, то колено должно направляться в ту же сторону, что и носок. Если же это не так, вы перегружаете колено и, соответственно, неправильно выполняете упражнение.\n
+4. На вдохе, начинайте отталкиваться от пола пятками, поднимитесь в исходное положение.
+"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @6, EXERCISE_NUMBER: @32, EXERCISE_NAME: @"Выпады со штангой", EXERCISE_DESCRIPTION: @"1. Это упражнение лучше всего выполнять внутри стойки для приседаний в целях безопасности. Чтобы начать это упражнение, сначала установите гриф на стойке чуть выше уровня плеча и загрузите гриф. Как только выбрана правильная высота и вес, встаньте под гриф, расположив его сзади на плечи (немного ниже шеи).\n
+2. Возьмитесь за гриф с двух сторон обеими руками и снимите штангу со стоек, одновременно отталкиваясь ногами и выпрямляя спину.\n
+3. Отойдите от стойки. Сделайте шаг вперед правой ногой и на вдохе начинайте приседать, сгибая колено передней ноги и напрягая бедра. Туловище держите ровно, это позволит вам держать равновесие. Совет: не позволяйте колену пересекать уловную линию носка, поскольку это приведет к перегрузке коленного сустава.\n
+4. На выдохе оттолкнитесь пяткой от пола и вернитесь в исходное положение. Повторите это движение с другой ногой.
+"}];
+
+//Голеностоп
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @7, EXERCISE_NUMBER: @33, EXERCISE_NAME: @"Выпады с гантелями", EXERCISE_DESCRIPTION: @"1. Возьмите в каждую руку по гантели. Станьте ровно, гантели в опущенных по швам руках. Это будет Ваше исходное положение.\n
+2. Сделайте один большой шаг вперед, примерно на 60 см. На вдохе, согните колено передней ноги, чтобы весь вес пришелся на нее. Туловище держите ровно. Колено задней ноги не должно находится от пола на 10-12 сантиметров.\n
+3. На выдохе оттолкнитесь пяткой от пола и вернитесь в исходное положение. Повторите это движение с другой ногой.
+"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @7, EXERCISE_NUMBER: @34, EXERCISE_NAME: @"Разгибание голени сидя в тренажере", EXERCISE_DESCRIPTION: @"1. Сядьте на тренажер, поставьте носки на нижнюю часть платформы и растяните икры. Выберите одно из трех положений для стоп (параллельно, вместе либо врозь) в зависимости от целевой группы мышц.\n
 2. Низ бедер поместите под валик рычага, который предварительно настройте в соответствии с длиной ваших ног. Во избежание соскальзывания валика с ног, положите руки на верхнюю подушку рычага.\n
 3. Теперь, усилием икр приподнимите груз и снимите фиксатор. Это будет ваше исходное положение.\n
 4. На вдохе начинайте плавно опускать пятки вниз. Продолжайте движение, пока Ваши икры полностью не растянутся.\n
 5. Усилием икр, на выдохе, поднимите груз как можно выше и задержитесь в этом положение на секунду.
 "}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @7, EXERCISE_NUMBER: @2, EXERCISE_NAME: @"Подъемы на тренажере стоя", EXERCISE_DESCRIPTION: @"1. Отрегулируйте тренажёр под свой рост.\n
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @7, EXERCISE_NUMBER: @35, EXERCISE_NAME: @"Подъемы на тренажере стоя", EXERCISE_DESCRIPTION: @"1. Отрегулируйте тренажёр под свой рост.\n
 2. Разместите плечи под специальными валиками и встаньте на платформу носками ног (пальцы ног должны быть направлены вперёд, а стопы — параллельны друг другу). Тело держите ровно, а колени слегка согнутыми. Это будет Ваше исходное положение. Совет: высота платформы должна быть такой, чтобы опустившись пятками вниз, вы не касались пола.\n
 3. На выдохе, медленно поднимитесь на носки как можно выше и задержитесь в этом положении в течение секунды. Во время подъема работайте голеностопными суставами и напрягайте икроножные мышцы.\n
 4. На вдохе, медленно опуститесь как можно ниже, также работая только голеностопным суставом. Как только Вы почувствуете растягивание икроножных мышц, начинайте подъем.
@@ -169,11 +216,30 @@
     
 
 //Трицепсы
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Французский жим", EXERCISE_DESCRIPTION: @""}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Жим на блоках", EXERCISE_DESCRIPTION: @""}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Обратный жим на блоках", EXERCISE_DESCRIPTION: @""}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Трицепс на скамье", EXERCISE_DESCRIPTION: @""}];
-    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @0, EXERCISE_NAME: @"Разгибания гантели из за головы", EXERCISE_DESCRIPTION: @""}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @36, EXERCISE_NAME: @"Французский жим", EXERCISE_DESCRIPTION: @"1. Лягте на горизонтальную скамью (положив голову ближе к краю скамьи) со штангой с прямой или EZ-образным грифом. Положите штангу на пол позади Вашей головы. Прочно упритесь ступнями в пол.\n
+2. Возьмите штангу прямым средним хватом и поднимите ее перед собой на расстоянии вытянутой руки. Совет: руки должны быть перпендикулярны туловищу и полу. Это будет Ваше исходное положение для французского жима.\n
+3. Сохраняя плечи и локти неподвижными, на выдохе плавно согните руки в локтях. Продолжайте опускать штангу до условного касания лба или заведите ее за голову.\n
+4. На выдохе, усилием трицепсов, верните штангу в исходное положение.
+"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @37, EXERCISE_NAME: @"Жим на блоках", EXERCISE_DESCRIPTION: @"1. Прикрепите прямую либо изогнутую рукоятку к верхнему блоку и установите необходимый вес. Возьмитесь за рукоять прямым хватом (равным ширине плеч).\n
+2. Стойте прямо. Немного наклоните торс к тренажеру. Ваши плечи должны быть расслаблены, локти прижаты к туловищу, а предплечья направлены в сторону тренажера. Это будет Ваше исходное положение для рагибания рук на верхнем блоке.\n
+3. Усилием трицепсов, плавно разгибайте руки до их полного выпрямления и до прикосновения рукоятки до верха бедер, при этом плечевая часть рук остается неподвижной. Движение выполняйте на выдохе.\n
+4. После короткой паузы, медленно вернитесь в исходное положение. Движение выполняйте на вдохе.
+"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @38, EXERCISE_NAME: @"Жим штанги из-за головы", EXERCISE_DESCRIPTION: @"1. Это упражнение лучше всего выполнять внутри стойки для приседаний. Чтобы начать, сначала установите штангу на стойку соответственно вашему росту. Как только выбрана правильная высота и необходимый вес, подойдите к штанге и упритесь в него задней поверхностью плеч (немного ниже шеи).\n
+2. Держите штангу обеими руками и поднимите ее со стоек, выпрямляя спину и отталкиваясь.\n
+3. Сделайте шаг назад от стойки, ноги поставьте на ширине плеч и слегка разведите носки. Спину держите постоянно прямой (даже когда выполняете это упражнение). Это будет Ваше исходное положение.\n
+4. На выдохе, жмите штангу вверх, выпрямляя полностью руки.\n
+5. После паузы, на вдохе, медленно опустите штангу в исходное положение.
+"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @39, EXERCISE_NAME: @"Трицепс на скамье", EXERCISE_DESCRIPTION: @"1. Поставьте горизонтальную скамью позади себя и продолжайте стоять спиной к скамье (при этом ваше тело перпендикулярно ей). Поставьте на скамью руки на ширине плеч, потом выставьте вперед ноги и согните их в поясе таким образом, чтобы они были перпендикулярны туловищу. Это будет Ваше исходное положение.\n
+2. Теперь медленно опускайтесь вниз, для этого сгибайте руки, пока угол между предплечьями и плечевой частью рук не будет немного менее 90˚. Эта часть упражнения выполняется на вдохе. Совет: во время выполнения упражнения отжимания от скамьи, держите локти как можно ближе друг к другу.\n
+3. Усилием трицепсов медленно вернитесь в исходное положение и сделайте необходимое число повторов.
+"}];
+    [exerciseArray addObject:@{MUSCLE_GROUP_NUMBER: @8, EXERCISE_NUMBER: @40, EXERCISE_NAME: @"Разгибания гантели из за головы", EXERCISE_DESCRIPTION: @"1. Сядьте на скамью со спинкой и возьмите по гантели в каждую руку. Поднимите их вверх над головой и держите на расстояние вытянутой руки. Совет: большие пальцы должны обхватывать гриф для безопасности. Это будет Ваше исходное положение.\n
+2. Держа плечевые части рук как можно ближе к голове, на выдохе плавно согните руки в локтях, чтобы гантель оказалась за головой. Совет: плечевые части рук должны все время оставаться неподвижными, а должны двигаться только Ваши предплечья.\n
+3. Усилием трицепсов и на вдохе, медленно вернитесь в исходное положение.
+"}];
 
 
 
@@ -202,8 +268,110 @@
 {
     NSMutableArray *pictureArray = [@[] mutableCopy];
     
-    [pictureArray addObject:@{EXERCISE_NUMBER: @0, EXERCISE_PICTURE: @"Legs01.png"}];
-    [pictureArray addObject:@{EXERCISE_NUMBER: @0, EXERCISE_PICTURE: @"Legs02.png"}];
+    //Мышцы пресса
+    [pictureArray addObject:@{EXERCISE_NUMBER: @0, EXERCISE_PICTURE: @"Press01.jpg"}];
+    [pictureArray addObject:@{EXERCISE_NUMBER: @0, EXERCISE_PICTURE: @"Press02.jpg"}];
+    [pictureArray addObject:@{EXERCISE_NUMBER: @1, EXERCISE_PICTURE: @"Press03.jpg"}];
+    [pictureArray addObject:@{EXERCISE_NUMBER: @1, EXERCISE_PICTURE: @"Press04.jpg"}];
+    [pictureArray addObject:@{EXERCISE_NUMBER: @2, EXERCISE_PICTURE: @"Press05.jpg"}];
+    [pictureArray addObject:@{EXERCISE_NUMBER: @2, EXERCISE_PICTURE: @"Press06.jpg"}];
+    [pictureArray addObject:@{EXERCISE_NUMBER: @3, EXERCISE_PICTURE: @"Press07.jpg"}];
+    [pictureArray addObject:@{EXERCISE_NUMBER: @3, EXERCISE_PICTURE: @"Press08.jpg"}];
+    [pictureArray addObject:@{EXERCISE_NUMBER: @4, EXERCISE_PICTURE: @"Press09.jpg"}];
+    [pictureArray addObject:@{EXERCISE_NUMBER: @4, EXERCISE_PICTURE: @"Press10.jpg"}];
+
+//Грудные мышцы
+[pictureArray addObject:@{EXERCISE_NUMBER: @5, EXERCISE_PICTURE: @"Grud01.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @5, EXERCISE_PICTURE: @"Grud02.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @6, EXERCISE_PICTURE: @"Grud03.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @6, EXERCISE_PICTURE: @"Grud04.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @7, EXERCISE_PICTURE: @"Grud05.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @7, EXERCISE_PICTURE: @"Grud06.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @8, EXERCISE_PICTURE: @"Grud07.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @8, EXERCISE_PICTURE: @"Grud08.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @9, EXERCISE_PICTURE: @"Grud09.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @9, EXERCISE_PICTURE: @"Grud10.jpg"}];
+
+//Бицепсы
+[pictureArray addObject:@{EXERCISE_NUMBER: @10, EXERCISE_PICTURE: @"Biceps01.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @10, EXERCISE_PICTURE: @"Biceps02.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @11, EXERCISE_PICTURE: @"Biceps03.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @11, EXERCISE_PICTURE: @"Biceps04.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @12, EXERCISE_PICTURE: @"Biceps05.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @12, EXERCISE_PICTURE: @"Biceps06.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @13, EXERCISE_PICTURE: @"Biceps07.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @13, EXERCISE_PICTURE: @"Biceps08.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @14, EXERCISE_PICTURE: @"Biceps09.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @14, EXERCISE_PICTURE: @"Biceps10.jpg"}];
+
+//Спина
+[pictureArray addObject:@{EXERCISE_NUMBER: @15, EXERCISE_PICTURE: @"Spina01.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @15, EXERCISE_PICTURE: @"Spina02.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @16, EXERCISE_PICTURE: @"Spina03.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @16, EXERCISE_PICTURE: @"Spina04.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @17, EXERCISE_PICTURE: @"Spina05.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @17, EXERCISE_PICTURE: @"Spina06.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @18, EXERCISE_PICTURE: @"Spina07.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @18, EXERCISE_PICTURE: @"Spina08.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @19, EXERCISE_PICTURE: @"Spina09.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @19, EXERCISE_PICTURE: @"Spina10.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @20, EXERCISE_PICTURE: @"Spina11.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @20, EXERCISE_PICTURE: @"Spina12.jpg"}];
+
+//Плечи
+
+[pictureArray addObject:@{EXERCISE_NUMBER: @21, EXERCISE_PICTURE: @"Plechi01.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @21, EXERCISE_PICTURE: @"Plechi02.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @22, EXERCISE_PICTURE: @"Plechi03.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @22, EXERCISE_PICTURE: @"Plechi04.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @23, EXERCISE_PICTURE: @"Plechi05.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @23, EXERCISE_PICTURE: @"Plechi06.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @24, EXERCISE_PICTURE: @"Plechi07.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @24, EXERCISE_PICTURE: @"Plechi08.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @25, EXERCISE_PICTURE: @"Plechi09.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @25, EXERCISE_PICTURE: @"Plechi10.jpg"}];
+
+
+//Предплечья
+
+[pictureArray addObject:@{EXERCISE_NUMBER: @26, EXERCISE_PICTURE: @"Predp01.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @26, EXERCISE_PICTURE: @"Predp02.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @27, EXERCISE_PICTURE: @"Predp03.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @27, EXERCISE_PICTURE: @"Predp04.jpg"}];
+
+
+//Ноги
+
+[pictureArray addObject:@{EXERCISE_NUMBER: @28, EXERCISE_PICTURE: @"Legs01.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @28, EXERCISE_PICTURE: @"Legs02.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @29, EXERCISE_PICTURE: @"Legs03.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @29, EXERCISE_PICTURE: @"Legs04.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @30, EXERCISE_PICTURE: @"Legs05.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @30, EXERCISE_PICTURE: @"Legs06.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @31, EXERCISE_PICTURE: @"Legs07.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @31, EXERCISE_PICTURE: @"Legs08.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @32, EXERCISE_PICTURE: @"Legs09.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @32, EXERCISE_PICTURE: @"Legs10.jpg"}];
+
+//Голеностоп
+[pictureArray addObject:@{EXERCISE_NUMBER: @33, EXERCISE_PICTURE: @"Golen01.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @33, EXERCISE_PICTURE: @"Golen02.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @34, EXERCISE_PICTURE: @"Golen03.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @34, EXERCISE_PICTURE: @"Golen04.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @35, EXERCISE_PICTURE: @"Golen05.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @35, EXERCISE_PICTURE: @"Golen06.jpg"}];
+
+//Трицепсы
+[pictureArray addObject:@{EXERCISE_NUMBER: @36, EXERCISE_PICTURE: @"Triceps01.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @36, EXERCISE_PICTURE: @"Triceps02.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @37, EXERCISE_PICTURE: @"Triceps03.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @37, EXERCISE_PICTURE: @"Triceps04.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @38, EXERCISE_PICTURE: @"Triceps05.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @38, EXERCISE_PICTURE: @"Triceps06.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @39, EXERCISE_PICTURE: @"Triceps07.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @39, EXERCISE_PICTURE: @"Triceps08.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @40, EXERCISE_PICTURE: @"Triceps09.jpg"}];
+[pictureArray addObject:@{EXERCISE_NUMBER: @40, EXERCISE_PICTURE: @"Triceps10.jpg"}];
     
     return [pictureArray copy];
 }
