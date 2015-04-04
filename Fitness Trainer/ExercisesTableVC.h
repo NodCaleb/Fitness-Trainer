@@ -12,5 +12,6 @@
 
 @property (nonatomic) int muscleGroupNumber;
 @property (strong, nonatomic) NSArray *exercises;
+@property (strong, nonatomic) NSString *muscleGroupName;
 
 @end

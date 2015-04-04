@@ -9,6 +9,7 @@
 #import "ExercisesTableVC.h"
 #import "ExerciseData.h"
 #import "ExerciseTableViewCell.h"
+#import "ExerciseDetailsVC.h"
 
 @interface ExercisesTableVC ()
 
@@ -20,6 +21,7 @@
     [super viewDidLoad];
     
     self.exercises = [ExerciseData getExercisesForGroup:self.muscleGroupNumber];
+    self.navigationItem.title = self.muscleGroupName;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,10 +44,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"exerciseCell" forIndexPath:indexPath];
+    ExerciseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"exerciseCell" forIndexPath:indexPath];
     
     NSDictionary *exerciseDictionary = [self.exercises objectAtIndex:indexPath.row];
     
+    cell.exerciseNumber = [[exerciseDictionary objectForKey:EXERCISE_NUMBER] integerValue];
     cell.textLabel.text = [exerciseDictionary objectForKey:EXERCISE_NAME];
     
     return cell;
@@ -86,14 +89,19 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showExerciseDetails"] && [segue.destinationViewController isKindOfClass:[ExerciseDetailsVC class]])
+    {
+        ExerciseTableViewCell *senderCell = (ExerciseTableViewCell *)sender;
+        ExerciseDetailsVC *targetVC = segue.destinationViewController;
+        targetVC.exerciseNumber = senderCell.exerciseNumber;
+    }
 }
-*/
+
 
 @end

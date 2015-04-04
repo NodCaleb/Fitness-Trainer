@@ -18,29 +18,32 @@
                     </tabBar>
                     <connections>
                         <segue destination="ekP-D4-qAG" kind="relationship" relationship="viewControllers" id="4Pt-Gv-DVR"/>
-                        <segue destination="zAr-Hs-6b5" kind="relationship" relationship="viewControllers" id="ewq-Bx-e2H"/>
-                        <segue destination="cCB-lb-wPd" kind="relationship" relationship="viewControllers" id="b7B-1D-Pir"/>
-                        <segue destination="b6V-7p-nUe" kind="relationship" relationship="viewControllers" id="OeI-LH-rEb"/>
+                        <segue destination="YUq-4U-85f" kind="relationship" relationship="viewControllers" id="ewq-Bx-e2H"/>
+                        <segue destination="oTl-Rk-XKr" kind="relationship" relationship="viewControllers" id="b7B-1D-Pir"/>
+                        <segue destination="jsw-5K-6Ct" kind="relationship" relationship="viewControllers" id="qz7-Mb-2EC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Добавки-->
+        <!--Supplement TableVC-->
         <scene sceneID="suN-Xl-cy7">
             <objects>
-                <tableViewController id="cCB-lb-wPd" sceneMemberID="viewController">
+                <tableViewController id="cCB-lb-wPd" customClass="SupplementTableVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Qfc-7f-pOf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rzp-BX-U8n">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="supplementCell" id="rzp-BX-U8n" customClass="SupplementCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rzp-BX-U8n" id="32f-h7-2wM">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="97D-ZT-S60" kind="show" identifier="showSupplementDetails" id="SO1-nC-KxR"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -48,11 +51,29 @@
                             <outlet property="delegate" destination="cCB-lb-wPd" id="I2p-Uh-s5O"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Добавки" id="lKS-bF-Ym5"/>
+                    <navigationItem key="navigationItem" id="i5t-3S-EwR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkR-lo-qlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1110" y="226.5"/>
+            <point key="canvasLocation" x="2028" y="271.5"/>
+        </scene>
+        <!--Supplement DetailsVC-->
+        <scene sceneID="nGG-a3-uo5">
+            <objects>
+                <viewController id="97D-ZT-S60" customClass="SupplementDetailsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Rj-0j-KOJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="zFp-gq-PxT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qdW-SC-7ie">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Cd-IL-SI0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2913" y="271.5"/>
         </scene>
         <!--Секундомер-->
         <scene sceneID="OcY-4X-jeK">
@@ -71,9 +92,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKe-J5-ibT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1110" y="969"/>
+            <point key="canvasLocation" x="-1404" y="2323.5"/>
         </scene>
-        <!--Калькуляторы-->
+        <!--BMI (Индекс массы тела)-->
         <scene sceneID="4xp-su-ewK">
             <objects>
                 <viewController id="b6V-7p-nUe" customClass="BMICalculatorVC" sceneMemberID="viewController">
@@ -257,6 +278,7 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Калькуляторы" id="R1e-sk-db8"/>
+                    <navigationItem key="navigationItem" title="BMI (Индекс массы тела)" id="P0n-3s-KXp"/>
                     <connections>
                         <outlet property="BMILabel" destination="lIu-yE-evS" id="REM-a8-sCh"/>
                         <outlet property="bodyMassLabel" destination="zYI-92-bv9" id="cjR-Pf-wcZ"/>
@@ -268,7 +290,225 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8T1-GB-2Kw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1110" y="1725"/>
+            <point key="canvasLocation" x="2913" y="1027.5"/>
+        </scene>
+        <!--Калькуляторы-->
+        <scene sceneID="xgz-9j-RJ2">
+            <objects>
+                <tableViewController id="OoL-QH-kFF" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ASk-a7-Gsi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="QsB-0h-4gJ">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZcP-cI-0KE">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZcP-cI-0KE" id="7u5-77-le1">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI (Индекс массы тела)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKh-NT-Khc">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FKh-NT-Khc" firstAttribute="leading" secondItem="7u5-77-le1" secondAttribute="leadingMargin" id="Pvf-8D-Ym2"/>
+                                                <constraint firstItem="FKh-NT-Khc" firstAttribute="centerY" secondItem="7u5-77-le1" secondAttribute="centerY" id="czV-Hv-4DO"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="FKh-NT-Khc"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="Pvf-8D-Ym2"/>
+                                                    <exclude reference="czV-Hv-4DO"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="FKh-NT-Khc"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="Pvf-8D-Ym2"/>
+                                                    <include reference="czV-Hv-4DO"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="b6V-7p-nUe" kind="show" id="b3g-lG-El8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="5RB-HZ-YgQ">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5RB-HZ-YgQ" id="gzr-d1-UY8">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body fat (Количество жира)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SQ-3d-RXI">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2SQ-3d-RXI" firstAttribute="leading" secondItem="gzr-d1-UY8" secondAttribute="leadingMargin" id="8NE-cm-Le7"/>
+                                                <constraint firstItem="2SQ-3d-RXI" firstAttribute="centerY" secondItem="gzr-d1-UY8" secondAttribute="centerY" id="LZZ-vp-f77"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="2SQ-3d-RXI"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="8NE-cm-Le7"/>
+                                                    <exclude reference="LZZ-vp-f77"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="2SQ-3d-RXI"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="8NE-cm-Le7"/>
+                                                    <include reference="LZZ-vp-f77"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="rM6-au-Te2" kind="show" id="3Hg-n6-fbx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="d4n-Xx-Uz7">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d4n-Xx-Uz7" id="V2q-3Y-pyp">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRM (Калории)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNU-EG-aSB">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hNU-EG-aSB" firstAttribute="leading" secondItem="V2q-3Y-pyp" secondAttribute="leadingMargin" id="9iM-gD-LHj"/>
+                                                <constraint firstItem="hNU-EG-aSB" firstAttribute="centerY" secondItem="V2q-3Y-pyp" secondAttribute="centerY" id="O8p-wu-MzX"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="hNU-EG-aSB"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="9iM-gD-LHj"/>
+                                                    <exclude reference="O8p-wu-MzX"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="hNU-EG-aSB"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="9iM-gD-LHj"/>
+                                                    <include reference="O8p-wu-MzX"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="SHf-SB-6q1" kind="show" id="bed-bm-1Lp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8Qm-a3-dYe">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Qm-a3-dYe" id="qt2-LG-ReP">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LBM (Масса тела без жира)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thd-s9-cAT">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Thd-s9-cAT" firstAttribute="centerY" secondItem="qt2-LG-ReP" secondAttribute="centerY" id="LAr-48-h3g"/>
+                                                <constraint firstItem="Thd-s9-cAT" firstAttribute="leading" secondItem="qt2-LG-ReP" secondAttribute="leadingMargin" id="OZ8-U5-UoM"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="Thd-s9-cAT"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="LAr-48-h3g"/>
+                                                    <exclude reference="OZ8-U5-UoM"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="Thd-s9-cAT"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="LAr-48-h3g"/>
+                                                    <include reference="OZ8-U5-UoM"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="o9R-0S-PaN" kind="show" id="AvT-rx-N7U"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="OoL-QH-kFF" id="RNG-1c-Lb1"/>
+                            <outlet property="delegate" destination="OoL-QH-kFF" id="NkO-Mk-eTc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Калькуляторы" id="qdT-LY-rkO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jA6-2S-h8y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028" y="1027.5"/>
+        </scene>
+        <!--BRM (Калории)-->
+        <scene sceneID="Pkb-mp-1le">
+            <objects>
+                <viewController id="SHf-SB-6q1" customClass="BRMCalculatorVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ddS-p0-4D3"/>
+                        <viewControllerLayoutGuide type="bottom" id="QAu-CQ-ZM7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Abb-oA-F1Z">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="BRM (Калории)" id="big-fl-NLo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HRF-ch-Og0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2913" y="2401.5"/>
+        </scene>
+        <!--LBM (Масса тела без жира)-->
+        <scene sceneID="Svb-WH-p3b">
+            <objects>
+                <viewController id="o9R-0S-PaN" customClass="LBMCalculatorVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c2f-q4-qGn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kgb-eg-ZCZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="193-Bj-YK7">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="LBM (Масса тела без жира)" id="XR7-AE-RhN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XVq-bp-Unh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2913" y="3082.5"/>
         </scene>
         <!--Fat CalculatorVC-->
         <scene sceneID="BJD-op-FAH">
@@ -362,13 +602,10 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="10" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ijk-lG-9TA">
                                 <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <connections>
+                                    <action selector="ageChanged:" destination="rM6-au-Te2" eventType="valueChanged" id="Zhc-xR-Vtv"/>
+                                </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="183 см." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9e-f7-Awb">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество жира:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVg-0O-4cG">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -400,6 +637,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 лет" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9e-f7-Awb">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -409,28 +652,42 @@
                             <constraint firstItem="m4B-En-cDC" firstAttribute="leading" secondItem="yAh-T0-ELV" secondAttribute="leading" id="DEQ-uz-HZA"/>
                             <constraint firstItem="ijk-lG-9TA" firstAttribute="top" secondItem="v9e-f7-Awb" secondAttribute="bottom" constant="9" id="FOX-w1-3gL"/>
                             <constraint firstItem="pVg-0O-4cG" firstAttribute="trailing" secondItem="Met-iC-LX2" secondAttribute="trailing" id="Geq-5F-FQc"/>
-                            <constraint firstItem="ti3-dD-nAY" firstAttribute="centerX" secondItem="ijk-lG-9TA" secondAttribute="centerX" id="Hdv-hw-3Wj"/>
+                            <constraint firstItem="ti3-dD-nAY" firstAttribute="centerX" secondItem="ijk-lG-9TA" secondAttribute="centerX" id="Hdv-hw-3Wj">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-4"/>
+                            </constraint>
                             <constraint firstItem="jSG-ZI-igC" firstAttribute="baseline" secondItem="yAh-T0-ELV" secondAttribute="baseline" id="KEo-uI-ixH"/>
                             <constraint firstItem="Oly-Fj-ZHe" firstAttribute="leading" secondItem="AHl-jm-95T" secondAttribute="leading" id="LUw-AR-TeT"/>
-                            <constraint firstItem="ti3-dD-nAY" firstAttribute="top" secondItem="ijk-lG-9TA" secondAttribute="bottom" constant="71" id="OGg-fC-CSR"/>
+                            <constraint firstItem="ti3-dD-nAY" firstAttribute="top" secondItem="ijk-lG-9TA" secondAttribute="bottom" constant="71" id="OGg-fC-CSR">
+                                <variation key="heightClass=regular-widthClass=compact" constant="17"/>
+                            </constraint>
                             <constraint firstItem="m4B-En-cDC" firstAttribute="trailing" secondItem="jSG-ZI-igC" secondAttribute="trailing" id="QNH-hn-ONv"/>
-                            <constraint firstItem="v9e-f7-Awb" firstAttribute="leading" secondItem="Zv7-Dk-7iy" secondAttribute="leading" id="TsD-48-y2W"/>
+                            <constraint firstItem="v9e-f7-Awb" firstAttribute="leading" secondItem="Zv7-Dk-7iy" secondAttribute="leading" id="TsD-48-y2W">
+                                <variation key="heightClass=regular-widthClass=compact" constant="9"/>
+                            </constraint>
                             <constraint firstItem="yAh-T0-ELV" firstAttribute="leading" secondItem="TEs-Nc-va2" secondAttribute="leadingMargin" id="TyM-4O-Z3H"/>
                             <constraint firstItem="Oly-Fj-ZHe" firstAttribute="top" secondItem="Zv7-Dk-7iy" secondAttribute="bottom" constant="9" id="Uv8-pJ-RYt"/>
-                            <constraint firstItem="pVg-0O-4cG" firstAttribute="top" secondItem="ti3-dD-nAY" secondAttribute="bottom" constant="48" id="W3f-k0-wf8"/>
+                            <constraint firstItem="pVg-0O-4cG" firstAttribute="top" secondItem="ti3-dD-nAY" secondAttribute="bottom" constant="48" id="W3f-k0-wf8">
+                                <variation key="heightClass=regular-widthClass=compact" constant="26"/>
+                            </constraint>
                             <constraint firstItem="jSG-ZI-igC" firstAttribute="trailing" secondItem="Met-iC-LX2" secondAttribute="trailing" id="WBG-ez-eVt"/>
                             <constraint firstItem="sQU-fv-V77" firstAttribute="top" secondItem="Met-iC-LX2" secondAttribute="bottom" constant="8" symbolic="YES" id="X1h-gd-fEC"/>
                             <constraint firstItem="ijk-lG-9TA" firstAttribute="leading" secondItem="wMi-4K-X1q" secondAttribute="leading" id="XBK-sM-Zju"/>
                             <constraint firstItem="wMi-4K-X1q" firstAttribute="leading" secondItem="Oly-Fj-ZHe" secondAttribute="leading" id="aJB-S8-ese"/>
-                            <constraint firstItem="AHl-jm-95T" firstAttribute="top" secondItem="m4B-En-cDC" secondAttribute="bottom" constant="36" id="d2E-gw-3Pe"/>
+                            <constraint firstItem="AHl-jm-95T" firstAttribute="top" secondItem="m4B-En-cDC" secondAttribute="bottom" constant="36" id="d2E-gw-3Pe">
+                                <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                            </constraint>
                             <constraint firstItem="yAh-T0-ELV" firstAttribute="leading" secondItem="Met-iC-LX2" secondAttribute="leading" id="deD-Gg-F0V"/>
                             <constraint firstItem="jSG-ZI-igC" firstAttribute="trailing" secondItem="TEs-Nc-va2" secondAttribute="trailingMargin" id="drZ-Cw-A4n"/>
                             <constraint firstItem="yAh-T0-ELV" firstAttribute="leading" secondItem="sQU-fv-V77" secondAttribute="leading" id="gej-XZ-l4B"/>
-                            <constraint firstItem="ijk-lG-9TA" firstAttribute="trailing" secondItem="v9e-f7-Awb" secondAttribute="trailing" id="hNp-Ty-x8Q"/>
+                            <constraint firstItem="ijk-lG-9TA" firstAttribute="trailing" secondItem="v9e-f7-Awb" secondAttribute="trailing" id="hNp-Ty-x8Q">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="Zv7-Dk-7iy" firstAttribute="baseline" secondItem="AHl-jm-95T" secondAttribute="baseline" id="iHk-6E-hkY"/>
                             <constraint firstItem="Oly-Fj-ZHe" firstAttribute="leading" secondItem="m4B-En-cDC" secondAttribute="leading" id="jwW-8w-Ylk"/>
                             <constraint firstItem="v9e-f7-Awb" firstAttribute="baseline" secondItem="wMi-4K-X1q" secondAttribute="baseline" id="lXg-qY-hpu"/>
-                            <constraint firstItem="wMi-4K-X1q" firstAttribute="top" secondItem="Oly-Fj-ZHe" secondAttribute="bottom" constant="39" id="szp-xW-wic"/>
+                            <constraint firstItem="wMi-4K-X1q" firstAttribute="top" secondItem="Oly-Fj-ZHe" secondAttribute="bottom" constant="39" id="szp-xW-wic">
+                                <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                            </constraint>
                             <constraint firstItem="pVg-0O-4cG" firstAttribute="leading" secondItem="Met-iC-LX2" secondAttribute="leading" id="tUc-x9-TLN"/>
                             <constraint firstItem="Met-iC-LX2" firstAttribute="top" secondItem="pVg-0O-4cG" secondAttribute="bottom" constant="8" symbolic="YES" id="u1i-h8-Ehw"/>
                             <constraint firstItem="Oly-Fj-ZHe" firstAttribute="trailing" secondItem="Zv7-Dk-7iy" secondAttribute="trailing" id="vs3-5s-giG"/>
@@ -447,10 +704,10 @@
                                 <exclude reference="ti3-dD-nAY"/>
                                 <exclude reference="wMi-4K-X1q"/>
                                 <exclude reference="ijk-lG-9TA"/>
-                                <exclude reference="v9e-f7-Awb"/>
                                 <exclude reference="pVg-0O-4cG"/>
                                 <exclude reference="Met-iC-LX2"/>
                                 <exclude reference="sQU-fv-V77"/>
+                                <exclude reference="v9e-f7-Awb"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="d2E-gw-3Pe"/>
@@ -498,10 +755,10 @@
                                 <include reference="ti3-dD-nAY"/>
                                 <include reference="wMi-4K-X1q"/>
                                 <include reference="ijk-lG-9TA"/>
-                                <include reference="v9e-f7-Awb"/>
                                 <include reference="pVg-0O-4cG"/>
                                 <include reference="Met-iC-LX2"/>
                                 <include reference="sQU-fv-V77"/>
+                                <include reference="v9e-f7-Awb"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="d2E-gw-3Pe"/>
@@ -540,6 +797,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="ageLabel" destination="v9e-f7-Awb" id="eOh-E4-Acy"/>
+                        <outlet property="ageSlider" destination="ijk-lG-9TA" id="ntZ-7a-7dL"/>
                         <outlet property="bodyWieghtLabel" destination="jSG-ZI-igC" id="yU6-Ar-b8E"/>
                         <outlet property="commentLabel" destination="sQU-fv-V77" id="xY6-e9-wHg"/>
                         <outlet property="genderSelector" destination="ti3-dD-nAY" id="ghT-be-Ose"/>
@@ -551,7 +810,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sm2-kW-zBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1110" y="2385"/>
+            <point key="canvasLocation" x="2913" y="1720.5"/>
         </scene>
         <!--Item-->
         <scene sceneID="pR0-LD-4hT">
@@ -561,7 +820,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSG-vD-uBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2004" y="969"/>
+            <point key="canvasLocation" x="-723" y="2323.5"/>
         </scene>
         <!--Stop WatchVC-->
         <scene sceneID="kaj-2B-27S">
@@ -600,7 +859,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K8P-Dy-bs1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2853" y="969"/>
+            <point key="canvasLocation" x="-48" y="2323.5"/>
         </scene>
         <!--AlarmVC-->
         <scene sceneID="kdF-ab-WDq">
@@ -639,13 +898,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LK3-zz-TSX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3708" y="969"/>
+            <point key="canvasLocation" x="-2070" y="2323.5"/>
         </scene>
         <!--Muscle Groups TableVC-->
         <scene sceneID="gdD-El-nnX">
             <objects>
                 <tableViewController id="sFU-um-zgG" customClass="MuscleGroupsTableVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="nrk-PI-qdW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -675,6 +935,7 @@
             <objects>
                 <tableViewController id="8x2-0m-alw" customClass="ExercisesTableVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="BLf-hl-V90">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -683,6 +944,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cc8-i2-OI9" id="jgc-vP-Q7x">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="24C-47-AdI" kind="show" identifier="showExerciseDetails" id="fQ3-X9-KFW"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -695,20 +959,41 @@
             </objects>
             <point key="canvasLocation" x="2913" y="-1114.5"/>
         </scene>
-        <!--Питание-->
+        <!--Exercise DetailsVC-->
+        <scene sceneID="9a0-xS-jX2">
+            <objects>
+                <viewController id="24C-47-AdI" customClass="ExerciseDetailsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6T6-6s-PjI"/>
+                        <viewControllerLayoutGuide type="bottom" id="ATp-dz-SU0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XuB-wa-jIR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YeC-Vi-cap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3789" y="-1114.5"/>
+        </scene>
+        <!--Food TableVC-->
         <scene sceneID="Ax8-7o-tKT">
             <objects>
-                <tableViewController id="zAr-Hs-6b5" sceneMemberID="viewController">
+                <tableViewController id="zAr-Hs-6b5" customClass="FoodTableVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rzp-sb-SsG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NJ9-Cd-AcW">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodCell" id="NJ9-Cd-AcW" customClass="FoodCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NJ9-Cd-AcW" id="bsq-VP-IJu">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ZDx-Gm-mjs" kind="show" identifier="showFoodDetails" id="Y8G-2s-dYv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -716,11 +1001,29 @@
                             <outlet property="delegate" destination="zAr-Hs-6b5" id="H02-f0-ELA"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Питание" id="nPs-5A-x4c"/>
+                    <navigationItem key="navigationItem" id="m0a-Rt-2BF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bM9-Za-L3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1110" y="-430.5"/>
+            <point key="canvasLocation" x="2028" y="-430.5"/>
+        </scene>
+        <!--Food DetailsVC-->
+        <scene sceneID="9Cm-6R-6DN">
+            <objects>
+                <viewController id="ZDx-Gm-mjs" customClass="FoodDetailsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dCi-lX-jzB"/>
+                        <viewControllerLayoutGuide type="bottom" id="0GC-CD-3FJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RNE-1o-cF2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEN-pj-iNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2913" y="-430.5"/>
         </scene>
         <!--Упражения-->
         <scene sceneID="B89-ae-AHd">
@@ -740,6 +1043,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gaK-ic-a1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1110" y="-1114.5"/>
+        </scene>
+        <!--Питание-->
+        <scene sceneID="zEM-4o-8rX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YUq-4U-85f" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Питание" id="nPs-5A-x4c"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nVk-yB-Nor">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zAr-Hs-6b5" kind="relationship" relationship="rootViewController" id="vRW-XE-FSm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Veg-AM-O4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110" y="-430.5"/>
+        </scene>
+        <!--Добавки-->
+        <scene sceneID="9zj-Gp-R0l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oTl-Rk-XKr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Добавки" id="lKS-bF-Ym5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tns-8r-9ZE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cCB-lb-wPd" kind="relationship" relationship="rootViewController" id="eTx-Kl-eAq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QMT-bo-qWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110" y="271.5"/>
+        </scene>
+        <!--Калькуляторы-->
+        <scene sceneID="eTS-RL-WdW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jsw-5K-6Ct" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Калькуляторы" id="Go1-La-dC6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m9I-uH-ey1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OoL-QH-kFF" kind="relationship" relationship="rootViewController" id="U8i-lr-M8t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pq8-0E-n5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110" y="1027.5"/>
         </scene>
     </scenes>
 </document>

@@ -22,11 +22,7 @@
     
     self.muscleGroups = [ExerciseData getMuscleGroups];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.title = @"Группы мышц";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -106,6 +102,7 @@
             MusleTableViewCell *senderCell = (MusleTableViewCell *)sender;
             ExercisesTableVC *targetVC = segue.destinationViewController;
             targetVC.muscleGroupNumber = senderCell.muscleGroupNumber;
+            targetVC.muscleGroupName = senderCell.textLabel.text;
         }
         
 }

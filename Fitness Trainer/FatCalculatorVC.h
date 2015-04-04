@@ -17,10 +17,14 @@
 @property (strong, nonatomic) IBOutlet UILabel *commentLabel;
 @property (strong, nonatomic) IBOutlet UISlider *weightSlider;
 @property (strong, nonatomic) IBOutlet UISlider *heightSlider;
+@property (weak, nonatomic) IBOutlet UISlider *ageSlider;
+@property (weak, nonatomic) IBOutlet UILabel *ageLabel;
 
 - (IBAction)weightSliderChanged:(id)sender;
 - (IBAction)heightSliderChanged:(id)sender;
 - (IBAction)genderChanged:(id)sender;
+- (IBAction)ageChanged:(id)sender;
+
 
 
 @end

@@ -22,7 +22,7 @@
 + (NSArray *) getAllExercises;
 + (NSArray *) getExercisesForGroup:(int)groupNumber; //Тренировки для выбранной группы мышц, данные для второй таблицы вкладки Тренировки
 + (NSArray *) getAllExercisePictures;
++ (NSDictionary *) getDetailsForExerciseWithNumber:(int)exerciseNumber;
 + (NSArray *) getPicturesForExercise:(int)exerciseNumber;
-//11
 
 @end
