@@ -21,6 +21,7 @@
                         <segue destination="YUq-4U-85f" kind="relationship" relationship="viewControllers" id="ewq-Bx-e2H"/>
                         <segue destination="oTl-Rk-XKr" kind="relationship" relationship="viewControllers" id="b7B-1D-Pir"/>
                         <segue destination="jsw-5K-6Ct" kind="relationship" relationship="viewControllers" id="qz7-Mb-2EC"/>
+                        <segue destination="z7Y-oh-1dq" kind="relationship" relationship="viewControllers" id="2XA-Ur-ooe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -483,8 +484,30 @@
                         <viewControllerLayoutGuide type="bottom" id="QAu-CQ-ZM7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Abb-oA-F1Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlY-b8-qTi">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="179" y="72" width="42" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="mlY-b8-qTi"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="mlY-b8-qTi"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="BRM (Калории)" id="big-fl-NLo"/>
                 </viewController>
@@ -501,6 +524,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Kgb-eg-ZCZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="193-Bj-YK7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1100,6 +1124,182 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pq8-0E-n5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1110" y="1027.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5Dw-1h-Ryw">
+            <objects>
+                <viewController id="Ir1-Gx-FWm" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ucn-uZ-1TZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="FSA-sL-BCI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BTk-k4-k8I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsY-qr-aRb">
+                                <rect key="frame" x="16" y="20" width="568" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="fFK-lf-EFO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fFK-lf-EFO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="fFK-lf-EFO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="20" width="368" height="159"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFg-n6-vdp">
+                                <rect key="frame" x="16" y="342" width="568" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KcE-MM-bgz"/>
+                                </constraints>
+                                <state key="normal" title="Стоп Таймер">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KcE-MM-bgz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="KcE-MM-bgz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="337" width="368" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Stop:" destination="Ir1-Gx-FWm" eventType="touchUpInside" id="zLZ-uS-Cay"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXc-1E-feF">
+                                <rect key="frame" x="16" y="458" width="568" height="74"/>
+                                <state key="normal" title="Сброс">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="417" width="368" height="250"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Restart:" destination="Ir1-Gx-FWm" eventType="touchUpInside" id="ZlQ-B8-gT6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NX-GI-8cL">
+                                <rect key="frame" x="16" y="232" width="568" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qcl-d4-1Ww"/>
+                                </constraints>
+                                <state key="normal" title="Старт Таймер">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qcl-d4-1Ww"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="qcl-d4-1Ww"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="234" width="368" height="50"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Start:" destination="Ir1-Gx-FWm" eventType="touchUpInside" id="M2S-MA-myn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2NX-GI-8cL" firstAttribute="leading" secondItem="WsY-qr-aRb" secondAttribute="leading" id="394-Kv-5lq"/>
+                            <constraint firstItem="WsY-qr-aRb" firstAttribute="top" secondItem="ucn-uZ-1TZ" secondAttribute="bottom" id="4cN-Zk-1CS"/>
+                            <constraint firstItem="2NX-GI-8cL" firstAttribute="trailing" secondItem="wFg-n6-vdp" secondAttribute="trailing" id="BaI-Vn-gFK"/>
+                            <constraint firstItem="2NX-GI-8cL" firstAttribute="trailing" secondItem="WsY-qr-aRb" secondAttribute="trailing" id="NjB-IB-05Y"/>
+                            <constraint firstItem="WsY-qr-aRb" firstAttribute="leading" secondItem="BTk-k4-k8I" secondAttribute="leadingMargin" id="O42-o6-vv0"/>
+                            <constraint firstItem="wXc-1E-feF" firstAttribute="trailing" secondItem="wFg-n6-vdp" secondAttribute="trailing" id="SoM-Pw-iXN"/>
+                            <constraint firstItem="2NX-GI-8cL" firstAttribute="top" secondItem="WsY-qr-aRb" secondAttribute="bottom" constant="55" id="agh-Ud-YnD"/>
+                            <constraint firstItem="wXc-1E-feF" firstAttribute="top" secondItem="wFg-n6-vdp" secondAttribute="bottom" constant="50" id="ahT-Qc-af0"/>
+                            <constraint firstItem="FSA-sL-BCI" firstAttribute="top" secondItem="wXc-1E-feF" secondAttribute="bottom" constant="133" id="bVf-DO-gWu"/>
+                            <constraint firstItem="wFg-n6-vdp" firstAttribute="leading" secondItem="2NX-GI-8cL" secondAttribute="leading" id="g1n-75-muY"/>
+                            <constraint firstItem="WsY-qr-aRb" firstAttribute="trailing" secondItem="BTk-k4-k8I" secondAttribute="trailingMargin" id="q4A-1a-SzZ"/>
+                            <constraint firstItem="wFg-n6-vdp" firstAttribute="top" secondItem="2NX-GI-8cL" secondAttribute="bottom" constant="53" id="t6r-Yu-0FF"/>
+                            <constraint firstItem="wXc-1E-feF" firstAttribute="leading" secondItem="wFg-n6-vdp" secondAttribute="leading" id="zd4-Zc-fAc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4cN-Zk-1CS"/>
+                                <exclude reference="O42-o6-vv0"/>
+                                <exclude reference="q4A-1a-SzZ"/>
+                                <exclude reference="394-Kv-5lq"/>
+                                <exclude reference="BaI-Vn-gFK"/>
+                                <exclude reference="NjB-IB-05Y"/>
+                                <exclude reference="agh-Ud-YnD"/>
+                                <exclude reference="t6r-Yu-0FF"/>
+                                <exclude reference="g1n-75-muY"/>
+                                <exclude reference="SoM-Pw-iXN"/>
+                                <exclude reference="zd4-Zc-fAc"/>
+                                <exclude reference="ahT-Qc-af0"/>
+                                <exclude reference="bVf-DO-gWu"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="4cN-Zk-1CS"/>
+                                <include reference="O42-o6-vv0"/>
+                                <include reference="q4A-1a-SzZ"/>
+                                <include reference="394-Kv-5lq"/>
+                                <include reference="BaI-Vn-gFK"/>
+                                <include reference="NjB-IB-05Y"/>
+                                <include reference="agh-Ud-YnD"/>
+                                <include reference="t6r-Yu-0FF"/>
+                                <include reference="g1n-75-muY"/>
+                                <include reference="SoM-Pw-iXN"/>
+                                <include reference="zd4-Zc-fAc"/>
+                                <include reference="ahT-Qc-af0"/>
+                                <include reference="bVf-DO-gWu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="mAz-ON-kbV"/>
+                    <connections>
+                        <outlet property="TimerDisplay" destination="WsY-qr-aRb" id="zUa-76-WSY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZdA-qI-cfw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028" y="2401.5"/>
+        </scene>
+        <!--Таймер-->
+        <scene sceneID="S9O-0G-cSv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z7Y-oh-1dq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Таймер" id="BUF-my-moA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4vP-4y-exr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ir1-Gx-FWm" kind="relationship" relationship="rootViewController" id="6Zp-AL-xcL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UWd-hU-fEP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110" y="2401.5"/>
         </scene>
     </scenes>
 </document>
