@@ -1247,11 +1247,11 @@
                                 <exclude reference="BaI-Vn-gFK"/>
                                 <exclude reference="NjB-IB-05Y"/>
                                 <exclude reference="agh-Ud-YnD"/>
-                                <exclude reference="t6r-Yu-0FF"/>
                                 <exclude reference="g1n-75-muY"/>
+                                <exclude reference="t6r-Yu-0FF"/>
                                 <exclude reference="SoM-Pw-iXN"/>
-                                <exclude reference="zd4-Zc-fAc"/>
                                 <exclude reference="ahT-Qc-af0"/>
+                                <exclude reference="zd4-Zc-fAc"/>
                                 <exclude reference="bVf-DO-gWu"/>
                             </mask>
                         </variation>
@@ -1264,11 +1264,11 @@
                                 <include reference="BaI-Vn-gFK"/>
                                 <include reference="NjB-IB-05Y"/>
                                 <include reference="agh-Ud-YnD"/>
-                                <include reference="t6r-Yu-0FF"/>
                                 <include reference="g1n-75-muY"/>
+                                <include reference="t6r-Yu-0FF"/>
                                 <include reference="SoM-Pw-iXN"/>
-                                <include reference="zd4-Zc-fAc"/>
                                 <include reference="ahT-Qc-af0"/>
+                                <include reference="zd4-Zc-fAc"/>
                                 <include reference="bVf-DO-gWu"/>
                             </mask>
                         </variation>
