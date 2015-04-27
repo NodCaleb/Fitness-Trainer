@@ -22,7 +22,7 @@
     
     self.pageIndex = 0;
     
-    self.viewControllers = @[(StopWatchVC *)[self.storyboard instantiateViewControllerWithIdentifier:@"ClockStopWatchVC"],(AlarmVC *)[self.storyboard instantiateViewControllerWithIdentifier:@"ClockAlarmVC"]];
+//    self.viewControllers = @[(StopWatchVC *)[self.storyboard instantiateViewControllerWithIdentifier:@"ClockStopWatchVC"],(AlarmVC *)[self.storyboard instantiateViewControllerWithIdentifier:@"ClockAlarmVC"]];
     
     NSArray *viewContorllers = @[[self.viewControllers objectAtIndex:0]];
     

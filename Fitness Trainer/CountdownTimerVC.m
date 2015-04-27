@@ -1,44 +1,44 @@
 //
-//  StopWatchVC.m
+//  CountdownTimerVC.m
 //  Fitness Trainer
 //
 //  Created by Eugene Rozhkov on 27.04.15.
 //  Copyright (c) 2015 Nord Point. All rights reserved.
 //
 
-#import "StopWatchVC.h"
+#import "CountdownTimerVC.h"
+#import <AudioToolbox/AudioToolbox.h>
 
-@interface StopWatchVC ()
+@interface CountdownTimerVC ()
 
 @property (strong, nonatomic) IBOutlet UIButton *startButton;
-- (IBAction)startButtonPressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UIDatePicker *timePicker;
 @property (strong, nonatomic) IBOutlet UILabel *timeLabel;
+- (IBAction)startButtonPressed:(id)sender;
+
 @property (nonatomic) bool running;
 @property (nonatomic) NSTimeInterval startTime;
 @property (nonatomic) NSTimeInterval stopTime;
 
-@property (strong, nonatomic) IBOutlet UIButton *resetButton;
-- (IBAction)resetButton:(id)sender;
-
-
 @end
 
-@implementation StopWatchVC
+@implementation CountdownTimerVC
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.navigationItem.title = @"Секундомер";
     
-    self.timeLabel.text = @"0:00.0";
-    self.running = NO;
-    [self.resetButton setHidden:YES];
+    self.navigationItem.title = @"Таймер";
+    self.timeLabel.text = @"0:00:00.0";
+    self.timePicker.countDownDuration = 60.0f;
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    
 }
 
 /*
@@ -56,15 +56,23 @@
     if(!self.running) return;
     
     NSTimeInterval currentTime = [NSDate timeIntervalSinceReferenceDate];
-    NSTimeInterval elapsedTime = currentTime - self.startTime;
+    NSTimeInterval estimstedTime = self.stopTime - currentTime;
     
-    int minutes = (int)(elapsedTime / 60.0);
-    elapsedTime -= minutes * 60;
-    int seconds = (int)elapsedTime;
-    elapsedTime -= seconds;
-    int fraction = elapsedTime * 10.0;
+    if (estimstedTime <= 0)
+    {
+        [self timerEnd];
+        return;
+    }
     
-    self.timeLabel.text = [NSString stringWithFormat:@"%u:%02u.%u", minutes, seconds, fraction];
+    int hours = (int)(estimstedTime / 3600.0);
+    estimstedTime -= hours * 3600;
+    int minutes = (int)(estimstedTime / 60.0);
+    estimstedTime -= minutes * 60;
+    int seconds = (int)estimstedTime;
+    estimstedTime -= seconds;
+    int fraction = estimstedTime * 10.0;
+    
+    self.timeLabel.text = [NSString stringWithFormat:@"%u:%02u:%02u.%u", hours, minutes, seconds, fraction];
     
     [self performSelector:@selector(updateTime) withObject:self afterDelay:0.1];
 }
@@ -73,27 +81,36 @@
 {
     if(!self.running)
     {
+        NSLog(@"%f", self.timePicker.countDownDuration);
         self.running = YES;
-        self.startTime = [NSDate timeIntervalSinceReferenceDate] - (self.stopTime - self.startTime);
+        self.stopTime = (int)[NSDate timeIntervalSinceReferenceDate] + (int)self.timePicker.countDownDuration;
         [self.startButton setTitle:@"Стоп" forState:UIControlStateNormal];
-        [self.resetButton setHidden:YES];
         [self updateTime];
     }
     else
     {
         [self.startButton setTitle:@"Старт" forState:UIControlStateNormal];
         self.stopTime = [NSDate timeIntervalSinceReferenceDate];
-        [self.resetButton setHidden:NO];
         self.running = NO;
     }
 }
 
-- (IBAction)resetButton:(id)sender
+-(void)timerEnd
 {
-    self.stopTime = 0;
-    self.startTime = 0;
-    self.timeLabel.text = @"0:00.0";
     self.running = NO;
-    [self.resetButton setHidden:YES];
+    [self.startButton setTitle:@"Старт" forState:UIControlStateNormal];
+    AudioServicesPlaySystemSound(1007);
+    UIAlertView *timeUpAlert = [[UIAlertView alloc] initWithTitle:@"Время истекло" message:nil delegate:nil cancelButtonTitle:@"ОК" otherButtonTitles:nil];
+    
+    [timeUpAlert show];
 }
 @end
+
+
+
+
+
+
+
+
+

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE2D17EC1AEEB1BD00768E39 /* CountdownTimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2D17EB1AEEB1BD00768E39 /* CountdownTimerVC.m */; };
+		DE2D17F51AEEB3F000768E39 /* StopWatchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2D17F41AEEB3F000768E39 /* StopWatchVC.m */; };
 		DE9EB8A51ACF207000AC5561 /* Biceps01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE9EB89B1ACF207000AC5561 /* Biceps01.jpg */; };
 		DE9EB8A61ACF207000AC5561 /* Biceps02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE9EB89C1ACF207000AC5561 /* Biceps02.jpg */; };
 		DE9EB8A71ACF207000AC5561 /* Biceps03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE9EB89D1ACF207000AC5561 /* Biceps03.jpg */; };
@@ -101,7 +103,6 @@
 		DEDD8E731AC33FFE006A68C0 /* Fitness_TrainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8E721AC33FFE006A68C0 /* Fitness_TrainerTests.m */; };
 		DEDD8EB91AC34855006A68C0 /* ClockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8EB81AC34855006A68C0 /* ClockVC.m */; };
 		DEDD8EBF1AC34A6E006A68C0 /* AlarmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8EBE1AC34A6E006A68C0 /* AlarmVC.m */; };
-		DEDD8EC21AC34A86006A68C0 /* StopWatchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8EC11AC34A86006A68C0 /* StopWatchVC.m */; };
 		DEDD8ECE1AC35F6C006A68C0 /* ExerciseData.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDD8ECD1AC35F6C006A68C0 /* ExerciseData.m */; };
 		DEDD8ED31AC362AD006A68C0 /* Abdomen.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDD8ECF1AC362AD006A68C0 /* Abdomen.png */; };
 		DEDD8ED41AC362AD006A68C0 /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = DEDD8ED01AC362AD006A68C0 /* Back.png */; };
@@ -143,6 +144,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE2D17EA1AEEB1BD00768E39 /* CountdownTimerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownTimerVC.h; sourceTree = "<group>"; };
+		DE2D17EB1AEEB1BD00768E39 /* CountdownTimerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownTimerVC.m; sourceTree = "<group>"; };
+		DE2D17F31AEEB3F000768E39 /* StopWatchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatchVC.h; sourceTree = "<group>"; };
+		DE2D17F41AEEB3F000768E39 /* StopWatchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopWatchVC.m; sourceTree = "<group>"; };
 		DE9EB89B1ACF207000AC5561 /* Biceps01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Biceps01.jpg; sourceTree = "<group>"; };
 		DE9EB89C1ACF207000AC5561 /* Biceps02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Biceps02.jpg; sourceTree = "<group>"; };
 		DE9EB89D1ACF207000AC5561 /* Biceps03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Biceps03.jpg; sourceTree = "<group>"; };
@@ -319,6 +324,10 @@
 			children = (
 				DECC932C1AD3125800260C90 /* ViewController.h */,
 				DECC932D1AD3125800260C90 /* ViewController.m */,
+				DE2D17EA1AEEB1BD00768E39 /* CountdownTimerVC.h */,
+				DE2D17EB1AEEB1BD00768E39 /* CountdownTimerVC.m */,
+				DE2D17F31AEEB3F000768E39 /* StopWatchVC.h */,
+				DE2D17F41AEEB3F000768E39 /* StopWatchVC.m */,
 			);
 			name = Timer;
 			sourceTree = "<group>";
@@ -769,13 +778,13 @@
 				DEF902071ACAC53E004D7D19 /* MusleTableViewCell.m in Sources */,
 				DEDD8EDC1AC366AA006A68C0 /* SupplementData.m in Sources */,
 				DEDD8E591AC33FFE006A68C0 /* AppDelegate.m in Sources */,
+				DE2D17F51AEEB3F000768E39 /* StopWatchVC.m in Sources */,
 				DEF9020A1ACAC6CF004D7D19 /* ExerciseTableViewCell.m in Sources */,
 				DEF4F1971AD0330C00B3847B /* SupplementDetailsVC.m in Sources */,
 				DEF4F1911AD0328500B3847B /* SupplementCell.m in Sources */,
 				DEEBB1051AC8423F00B23F80 /* BMICalculatorVC.m in Sources */,
 				DEDD8EB91AC34855006A68C0 /* ClockVC.m in Sources */,
 				DEB128CD1AD077A3004580D3 /* BRMCalculatorVC.m in Sources */,
-				DEDD8EC21AC34A86006A68C0 /* StopWatchVC.m in Sources */,
 				DEF4F19A1AD0338200B3847B /* ExerciseDetailsVC.m in Sources */,
 				DEBFBA6B1ACC3EFF00EA3E75 /* ExercisesTableVC.m in Sources */,
 				DEB128D01AD077B5004580D3 /* LBMCalculatorVC.m in Sources */,
@@ -784,6 +793,7 @@
 				DEF4F18B1AD0325900B3847B /* SupplementTableVC.m in Sources */,
 				DEF4F1941AD032FA00B3847B /* FoodDetailsVC.m in Sources */,
 				DEDD8ED91AC36695006A68C0 /* FoodData.m in Sources */,
+				DE2D17EC1AEEB1BD00768E39 /* CountdownTimerVC.m in Sources */,
 				DEDD8EBF1AC34A6E006A68C0 /* AlarmVC.m in Sources */,
 				DEDD8E561AC33FFE006A68C0 /* main.m in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  StopWatchVC.h
+//  CountdownTimerVC.h
 //  Fitness Trainer
 //
 //  Created by Eugene Rozhkov on 27.04.15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StopWatchVC : UIViewController
+@interface CountdownTimerVC : UIViewController
 
 @end
