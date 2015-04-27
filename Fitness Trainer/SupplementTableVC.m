@@ -50,6 +50,7 @@
     
     cell.cellSupplement = cellSupplement;
     cell.textLabel.text = cell.cellSupplement.title;
+    cell.imageView.image = [UIImage imageNamed:cellSupplement.imageName];
     
     return cell;
 }

@@ -19,6 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self updateBMILabels];
+    //[self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"Triceps10.png"]forBarMetrics:UIBarMetricsDefault];
 }
 
 - (void)didReceiveMemoryWarning {
