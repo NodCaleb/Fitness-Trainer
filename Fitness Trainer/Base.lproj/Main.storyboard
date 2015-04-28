@@ -520,6 +520,7 @@
             <objects>
                 <tableViewController id="DXa-qj-LHm" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="wwb-0e-vFp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -535,9 +536,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="8" y="11" width="60" height="21"/>
-                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -577,9 +575,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="8" y="11" width="100" height="21"/>
-                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -632,6 +627,7 @@
                         <viewControllerLayoutGuide type="bottom" id="RWD-7l-DFS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hdp-QB-77T">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kk-xV-fCk">
@@ -726,12 +722,12 @@
                                 <exclude reference="N9e-uK-fxN"/>
                                 <exclude reference="fIH-Yr-QLD"/>
                                 <exclude reference="w4n-SS-1qq"/>
-                                <exclude reference="1Et-aY-Oki"/>
-                                <exclude reference="uYl-W7-Ckx"/>
+                                <exclude reference="Y79-5X-IAG"/>
                                 <exclude reference="9mO-j7-cC5"/>
                                 <exclude reference="Uog-dZ-EEm"/>
                                 <exclude reference="sLg-Gx-ATJ"/>
-                                <exclude reference="Y79-5X-IAG"/>
+                                <exclude reference="1Et-aY-Oki"/>
+                                <exclude reference="uYl-W7-Ckx"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -744,12 +740,12 @@
                                 <include reference="N9e-uK-fxN"/>
                                 <include reference="fIH-Yr-QLD"/>
                                 <include reference="w4n-SS-1qq"/>
-                                <include reference="1Et-aY-Oki"/>
-                                <include reference="uYl-W7-Ckx"/>
+                                <include reference="Y79-5X-IAG"/>
                                 <include reference="9mO-j7-cC5"/>
                                 <include reference="Uog-dZ-EEm"/>
                                 <include reference="sLg-Gx-ATJ"/>
-                                <include reference="Y79-5X-IAG"/>
+                                <include reference="1Et-aY-Oki"/>
+                                <include reference="uYl-W7-Ckx"/>
                             </mask>
                         </variation>
                     </view>
@@ -772,6 +768,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3rc-ZZ-JBO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eWq-9n-gE4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="timeLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rk8-b6-HU6">
@@ -844,15 +841,15 @@
                                 <exclude reference="wv0-Gi-KO5"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="sSa-US-915"/>
                                 <exclude reference="8uy-wL-TG3"/>
                                 <exclude reference="9mK-5N-oGj"/>
                                 <exclude reference="HGq-M1-3MF"/>
                                 <exclude reference="Prq-uj-uoY"/>
-                                <exclude reference="Jye-of-0if"/>
-                                <exclude reference="trw-Lb-Qcr"/>
                                 <exclude reference="TXL-8D-9Hj"/>
                                 <exclude reference="YSS-x9-oEG"/>
-                                <exclude reference="sSa-US-915"/>
+                                <exclude reference="Jye-of-0if"/>
+                                <exclude reference="trw-Lb-Qcr"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -862,15 +859,15 @@
                                 <include reference="wv0-Gi-KO5"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="sSa-US-915"/>
                                 <include reference="8uy-wL-TG3"/>
                                 <include reference="9mK-5N-oGj"/>
                                 <include reference="HGq-M1-3MF"/>
                                 <include reference="Prq-uj-uoY"/>
-                                <include reference="Jye-of-0if"/>
-                                <include reference="trw-Lb-Qcr"/>
                                 <include reference="TXL-8D-9Hj"/>
                                 <include reference="YSS-x9-oEG"/>
-                                <include reference="sSa-US-915"/>
+                                <include reference="Jye-of-0if"/>
+                                <include reference="trw-Lb-Qcr"/>
                             </mask>
                         </variation>
                     </view>
@@ -1485,9 +1482,6 @@
                                         <include reference="fFK-lf-EFO"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="20" width="368" height="159"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFg-n6-vdp">
                                 <rect key="frame" x="16" y="342" width="568" height="75"/>
@@ -1507,9 +1501,6 @@
                                         <include reference="KcE-MM-bgz"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="337" width="368" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="Stop:" destination="Ir1-Gx-FWm" eventType="touchUpInside" id="zLZ-uS-Cay"/>
                                 </connections>
@@ -1519,9 +1510,6 @@
                                 <state key="normal" title="Сброс">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="417" width="368" height="250"/>
-                                </variation>
                                 <connections>
                                     <action selector="Restart:" destination="Ir1-Gx-FWm" eventType="touchUpInside" id="ZlQ-B8-gT6"/>
                                 </connections>
@@ -1543,9 +1531,6 @@
                                     <mask key="constraints">
                                         <include reference="qcl-d4-1Ww"/>
                                     </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="234" width="368" height="50"/>
                                 </variation>
                                 <connections>
                                     <action selector="Start:" destination="Ir1-Gx-FWm" eventType="touchUpInside" id="M2S-MA-myn"/>
